@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A-Z Glossary</title>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:700" rel="stylesheet">
+  
+  <style>
+  
+  .Featured, h1, {
+  Font-Family: 'Roboto', Sans-Serif;
+  font-weight: 700;
+text-transform: uppercase;}
+  
+
+/* Navigation bar */
+
+.navbar {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+
+.navigation__list {
+	
+	margin: auto;
+	padding: 0;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-link {
+	position: relative;
+	display: block;
+	padding: 1em;
+	margin-left: 2.4em;
+	font-family: 'Roboto';
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 1px;
+	text-transform: uppercase
+}
+
+.nav-link:after {	
+	content: "";
+	position: relative;
+	color: #31708f;
+	bottom: -2px;
+	display: block;
+	width: 100%;
+	height: 1.5px;
+	background-color: black;
+	opacity: 0;
+	transition: all 0.5s ease-in;
+}
+
+.nav-link:hover:after {	
+	opacity: 1;
+}
+
+
+.nav-link:active {	
+	font-weight: 800;
+}
+
+#logo-navbar-middle {
+	padding-left: 1.6em;
+	}
+
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Page Title */
+
+#topHeader {
+    font-size: 2em;
+}
+ 
+/* Horizontal rule */
+
+	hr {
+	
+      width:80%;
+   }
+   
+
+/* Footer */
+	
+.btn {
+	margin-left: 0.2em;
+	background-color: #4484CE;
+	color: white;
+	}
+	
+    footer {
+	
+	display: block;	
+    background-color: white;
+    padding: 1em;
+    font-size: small;
+    font-style: italic;
+	text-align: center;
+	
+	}
+	
+	.fa {
+    margin-left: 0.3em;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+	color: #4484CE;
+	}
+
+	
+
+/* Dictionary */
+
+    .dictionaryArea {
+        
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+    }
+    
+    h1 {
+        font-size: 600%;
+    }
+    .column {
+    float: left;
+    padding: 10px;
+    }
+
+    .left {
+    width: 15%;
+    }
+    
+    .middle {
+        font-style: italic;
+        width: 25%;
+    }
+    .right {
+    width: 60%;
+    }
+
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(61, 121, 199);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: black;
+}
+  </style>
+</head>
+
+<body data-spy='scroll' data-target='.navbar' data-offset='10'>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-faded">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navDropdown">
+                      <ul class="navigation__list navbar-nav mr-auto mt-2 mt-md-0">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Get Started
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item  active" href="terms.html">A-Z Glossary</a>
+                            <a class="dropdown-item" href="#">The Basics</a>
+                              </li>
+                        <li><a href="index.html"><img id="logo-navbar-middle" src="images/logo.png" width="206" alt="Scratch Post logo"></a></li>
+                         <li class="nav-item">
+                         
+                          <li class="nav-item">
+                          <a class="nav-link" href="resources.html">Resources</a>
+                              </li>
+                              
+                              
+                              <li class="nav-item">
+                          <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        
+                       </ul>
+                        </div>
+                        <hr>
+                  </nav> 
+
+<!-- Page Title -->
+<h1 class="mt-2 text-info" id="topHeader" style="text-align: center;">A-Z Glossary</h1>
+
+<!-- Alphabet Menu -->
+  <div class="container">
+        
+    <div class="row">
+            
+       <div class="col-sm-12">
+          
+           <nav class="navbar navbar-expand-lg">
+                <ul class="navbar nav">
+                    <li class="nav-item"><a href='#A' class="nav-link active">A</a></li>
+                    <li class="nav-item"><a href='#B' class="nav-link active">B</a></li>
+                    <li class="nav-item"><a href='#C' class="nav-link active">C</a></li>
+                    <li class="nav-item"><a href='#D' class="nav-link active">D</a></li>
+                    <li class="nav-item"><a href='#E' class="nav-link active">E</a></li>
+                    <li class="nav-item"><a href='#F' class="nav-link active">F</a></li>
+                    <li class="nav-item"><a href='#G' class="nav-link active">G</a></li>
+                    <li class="nav-item"><a href='#H' class="nav-link active">H</a></li>
+                    <li class="nav-item"><a href='#I' class="nav-link active">I</a></li>
+                    <li class="nav-item"><a href='#J' class="nav-link active">J</a></li>
+                    <li class="nav-item"><a href='#K' class="nav-link active">K</a></li>
+                    <li class="nav-item"><a href='#L' class="nav-link active">L</a></li>
+                    <li class="nav-item"><a href='#M' class="nav-link active">M</a></li>
+                    <li class="nav-item"><a href='#N' class="nav-link active">N</a></li>
+                    <li class="nav-item"><a href='#O' class="nav-link active">O</a></li>
+                    <li class="nav-item"><a href='#P' class="nav-link active">P</a></li>
+                    <li class="nav-item"><a href='#Q' class="nav-link active">Q</a></li>
+                    <li class="nav-item"><a href='#R' class="nav-link active">R</a></li>
+                    <li class="nav-item"><a href='#S' class="nav-link active">S</a></li>
+                    <li class="nav-item"><a href='#T' class="nav-link active">T</a></li>
+                    <li class="nav-item"><a href='#U' class="nav-link active">U</a></li>
+                    <li class="nav-item"><a href='#V' class="nav-link active">V</a></li>
+                    <li class="nav-item"><a href='#W' class="nav-link active">W</a></li>
+                    <li class="nav-item"><a href='#X' class="nav-link active">X</a></li>
+                    <li class="nav-item"><a href='#Y' class="nav-link active">Y</a></li>
+                    <li class="nav-item"><a href='#Z' class="nav-link active">Z</a></li>
+                                    
+                </ul>
+                                    
+            </nav>
+        </div>
+                            
+    </div>
+</div>
+      
+<!--Sections-->
+
+<div class="container col-lg-9 dictionaryArea">
+<div id="A" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+        <div class="column left">
+                <h1>A</h1>
+        </div>
+
+        <div class="column middle">
+            <p>Apple</p>
+            <p>Asia</p>
+            <p>Angle</p>
+        </div>
+
+        <div class="column right">
+            <p>Apple info Apple info Apple info Apple info Apple info Apple info Apple info Apple info </p>
+            <p>Asia info</p>
+            <p>Angle info</p>
+        </div>
+    </div>
+
+    <div id="B" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+            <div class="column left">
+                    <h1>B</h1>
+            </div>
+    
+            <div class="column middle">
+                <p><a href="https://en.scratch-wiki.info/wiki/Blocks">Blocks</a></p>
+                <p>Balloon</p>
+                <p>Batch</p>
+            </div>
+    
+            <div class="column right">
+                <p><a href="https://en.scratch-wiki.info/wiki/Blocks">Blocks</a> are puzzle-piece shapes that are used to create code in Scratch.</p>
+                <p>Balloon info</p>
+                <p>Batch info</p>
+            </div>
+        </div>
+
+        <div id="C" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>C</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+
+
+            <div id="D" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>D</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+
+            <div id="E" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>E</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+
+
+            <div id="F" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>F</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="G" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>G</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="H" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>H</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="I" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>I</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="J" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>J</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="K" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>K</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="L" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>L</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="M" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>M</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="N" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>N</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="O" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>O</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="P" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>P</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="Q" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>Q</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="R" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>R</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="S" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>S</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="T" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>T</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="U" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>U</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="V" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>V</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="W" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>W</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="X" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>X</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="Y" class="row bg-info text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>Y</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+            
+            <div id="Z" class="row bg-faded text-center" style="padding-top:70px;padding-bottom:70px;">
+                <div class="column left">
+                        <h1>Z</h1>
+                </div>
+        
+                <div class="column middle">
+                    <p>Cape</p>
+                    <p>Cone</p>
+                    <p>Cat</p>
+                </div>
+        
+                <div class="column right">
+                    <p>Cape info Cape info Cape info Cape info Cape info Cape info Cape info</p>
+                    <p>Cone info</p>
+                    <p>Cat info</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- Footer -->
+<hr>
+  <footer>
+    <div class="row" id="footer">
+      <div class="col-md-12 col-sm-4">
+        <div class="social-icons pull-right">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+
+		</div>
+		</div>
+	</div>
+	</footer>
+
+	<!-- jQuery  JS-->
+		<script src="js/jquery-3.3.1.js"></script> 
+	
+	<!-- Bootstrap JS -->
+        <script src='js/bootstrap.min.js'></script> 
+        
+        <script>
+                // Show button after scroll
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("myBtn").style.display = "block";
+                    } else {
+                        document.getElementById("myBtn").style.display = "none";
+                    }
+                }
+                
+                // Scroll to top 
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+
+                
+                </script>
+</body>
+</html>
+
+<!-- Licenses to credit later 
+
+
+Logo font: https://www.dafont.com/master-of-comics.font?text=Scratch+Post&psize=l&back=theme
+
+-->
+
