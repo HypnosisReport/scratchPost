@@ -115,8 +115,17 @@ text-transform: uppercase;
    #resPreview {
      margin: auto;
      padding: .8em;
-
    }
+    .resContent {
+      width: 96%;
+    }
+
+/* Comments */
+
+.commentSection {
+  width: 96%;
+}
+  
  /* Resource sidebar */
  
  .topic-img {
@@ -155,7 +164,7 @@ text-transform: uppercase;
 	
 	}
 	
-	.fa {
+	.fIcon {
     margin-left: 0.3em;
     font-size: 20px;
     width: 50px;
@@ -232,26 +241,39 @@ text-transform: uppercase;
       
     
 <h1 class="mt-2 text-info" id="topHeader" style="text-align: center;">Intro To Plants And Animals</h1>
+<div class="container">
+  <div class="row justify-content-center">
+<h3><span class="badge badge-success">Science</span></h3>
+  </div>
+</div>
 <hr>
 
         <!-- Post Content -->
+        <div class="resContent" style="text-align:justify">
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
 
+        <div class="container">
+          <div class="row justify-content-center">
         <img src="images/resPreview.png" alt="Preview of resource" id="resPreview" class="text-center">
+          </div>
+        </div>
+
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
-
+      </div>
         <hr>
 
   <!-- Date -->
         <p>Posted on December 13th, 4:00PM</p>
+        
 
         <!-- Comments Form -->
+        <div class="commentSection">
         <div class="card my-4">
           <h5 class="card-header">Leave a Comment:</h5>
           <div class="card-body">
@@ -259,7 +281,7 @@ text-transform: uppercase;
               <div class="form-group">
                 <textarea class="form-control" rows="3"></textarea>
               </div>
-              <button type="download" class="btn btn-info">Submit</button>
+              <button type="submit" class="btn btn-info">Submit</button>
             </form>
           </div>
         </div>
@@ -298,14 +320,17 @@ text-transform: uppercase;
 
           </div>
         </div>
-
+      </div>
       </div>
 
       <!-- Resource Sidebar -->
-      <div class="col-md-3 resSidebar">
+      <div class="col-md-3 resSidebar text-center">
             <div class="row downloadSection">
-                <button type="button" value="download" class="btn btn-dark btn-lg dlBtn">Download Resource</button>
-            </div>
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                <button type="button" value="download" class="btn btn-dark btn-lg dlBtn"><i class="fa fa-download"></i> Download Resource</button>
+           
             <hr>
             <div class="row">
             <div class="content">
@@ -347,20 +372,23 @@ text-transform: uppercase;
         </div>
 
       </div>
+      </div>
 
     </div>
+  </div>
 
   
-
+  </div>
+</div>
 <!-- Footer -->
 <hr>
   <footer>
     <div class="row" id="footer">
       <div class="col-md-12 col-sm-4">
         <div class="social-icons pull-right">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-pinterest"></a>
+          <a href="#" class="fa fa-facebook fIcon"></a>
+          <a href="#" class="fa fa-twitter fIcon"></a>
+          <a href="#" class="fa fa-pinterest fIcon"></a>
 
 		</div>
 		</div>
