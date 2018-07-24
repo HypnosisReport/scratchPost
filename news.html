@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Resources</title>
+  <title>News | Page 1</title>
  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -100,6 +100,7 @@ text-transform: uppercase;}
 #topHeader {
     font-size: 2em;
     word-break: break-all;
+    padding-bottom: .6em;
 }
  
 /* Horizontal rule */
@@ -110,6 +111,20 @@ text-transform: uppercase;}
    }
    
 
+/* News Posts */
+
+.newsPost {
+  border: 0px;
+}
+
+.newsPost a {
+  color: #ff9800;
+}
+
+h2 {
+  
+  text-align: center;
+}
 /* Footer */
 
 	
@@ -133,96 +148,6 @@ text-transform: uppercase;}
     border-radius: 50%;
 	color: #4484CE;
 	}
-
-
-
-/* Resource Grid */
-
-  * {
-    box-sizing: border-box;
-} 
-
-.card-title {
-   text-align: center;
- }
- 
-.row {
-    margin: 8px -16px;
-}
-
-/*.card {*/
-/*border-width: */
-	  }
-
-#resourceGrid {
-	font-family: "Molengo", sans-serif;
-	color: black;
-  padding: 3em;
-	}
-
-/* Column Padding */
-.row,
-.row > .column {
-    padding: 8px;
-}
-
-.topic-title {
-  Font-Family: 'Roboto', Sans-Serif;
-  font-weight: 700;
-  text-decoration: none;
-  padding-top: .5em;
-  
-}
-
-/* 3 Columns */
-.column {
-    float: left;
-    width: 25%;
-    display: none; /* Hide columns by default */
-}
-
-/* Clear Floats */ 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-
-.content {
-    background-color: white;
-   
-    text-align: center;
-   
-}
-
-
-.topic-img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/*  Show class added to filtered elements */
-.show {
-    display: block;
-}
-
-/* Resource grid buttons */
-.gridBtn {
-  cursor: pointer;
-  background-color: #5bc0de;
-}
-
-.gridBtn:hover {
-  background-color: #ddd;
-
-}
-
-#myBtnContainer {
-padding-top: .5em;
-margin:auto;
-
-}
 
   /* Pagination */
 
@@ -280,40 +205,37 @@ margin:auto;
 
   <div class="row">
 
-    <!-- Blog Entries Column -->
+    <!-- News Entries Column -->
     
     <div class="col-md-8">
 
   
-      <!-- Blog Post -->
-      <div class="card mb-4 blogPost">
+      <!-- News Post -->
+      <div class="card mb-4 newsPost">
         <a href="newsPost1.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
         <div class="card-body">
-          <h2 class="card-title"><a href="newsPost1.html">Rising number of GCSE students dropping ICT</a></h2>
+          <h3 class="card-title"><a href="newsPost1.html">Rising number of GCSE students dropping ICT</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-          <a href="newsPost1.html" class="btn btn-primary">Read More &rarr;</a>
         </div>
       </div>
 
 <hr>
-   <!-- Blog Post -->
-      <div class="card mb-4 blogPost">
+   <!-- News Post -->
+      <div class="card mb-4 newsPost">
         <a href="newsPost2.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
         <div class="card-body">
-          <h2 class="card-title"><a href="newsPost2.html">How do we solve the women in STEM problem?</a></h2>
+          <h3 class="card-title"><a href="newsPost2.html">How do we solve the women in STEM problem?</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-          <a href="newsPost1.html" class="btn btn-primary">Read More &rarr;</a>
         </div>
       </div>
 
 <hr>
-      <!-- Blog Post -->
-      <div class="card mb-4 blogPost">
+      <!-- News Post -->
+      <div class="card mb-4 newsPost">
         <a href="newsPost3.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
         <div class="card-body">
-          <h2 class="card-title"><a href="newsPost3.html">Studies show programming improves maths skills</a></h2>
+          <h3 class="card-title"><a href="newsPost3.html">Studies show programming improves maths skills</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-          <a href="newsPost1.html" class="btn btn-primary">Read More &rarr;</a>
         </div>
       </div>
 
@@ -335,7 +257,7 @@ margin:auto;
 
       <!-- Categories Widget -->
       <div class="card my-3">
-        <h3 class="card-header">Categories</h3>
+        <h5 class="card-header">Categories</h3>
         <div class="card-body">
           <div class="row">
             <div class="col-lg-6">
