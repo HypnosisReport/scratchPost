@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact</title>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:700" rel="stylesheet">
+  
+  <style>
+  
+ 
+
+/* Navigation bar */
+
+.navbar {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+
+.navigation__list {
+	
+	margin: auto;
+	padding: 0;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-link {
+	position: relative;
+	display: block;
+	padding: 1em;
+	margin-left: 2.4em;
+	font-family: 'Roboto';
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 1px;
+	text-transform: uppercase
+}
+
+.nav-link:after {	
+	content: "";
+	position: relative;
+	color: #31708f;
+	bottom: -2px;
+	display: block;
+	width: 100%;
+	height: 1.5px;
+	background-color: black;
+	opacity: 0;
+	transition: all 0.5s ease-in;
+}
+
+.nav-link:hover:after {	
+	opacity: 1;
+}
+
+
+.nav-link:active {	
+	font-weight: 800;
+}
+
+#logo-navbar-middle {
+	padding-left: 1.6em;
+	}
+
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Page Title */
+
+#topHeader {
+    font-size: 2em;
+}
+ 
+/* Horizontal rule */
+
+	hr {
+	
+      width:80%;
+   }
+   
+
+/* Footer */
+	
+
+	.footer {
+  width: 100%;
+  margin-top: 4em;
+  position:static;
+  height: auto;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: #ff9800;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #ffffff;;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color:#ff9800;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+/* Form */
+
+    .formArea {
+        
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+        
+}
+    .subBtn {
+        background-color: #ff9800;
+        margin-top:.5em;
+    }
+
+    label {
+        color: #ff9800;
+        font-weight: 600;
+    }
+
+    .formDesc {
+        text-align: center;
+        font-style:italic;
+
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation bar --> 
+        <nav class="navbar navbar-expand-md navbar-light bg-faded">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navDropdown">
+                      <ul class="navigation__list navbar-nav mr-auto mt-2 mt-md-0">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Get Started
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item  active" href="terms.html">A-Z Glossary</a>
+                            <a class="dropdown-item" href="basics.html">The Basics</a>
+                              </li>
+                        <li><a href="index.html"><img id="logo-navbar-middle" src="images/logo.png" width="206" alt="Scratch Post logo"></a></li>
+                         <li class="nav-item">
+                         
+                          <li class="nav-item">
+                          <a class="nav-link" href="resources.html">Resources</a>
+                              </li>
+                              
+                              
+                              <li class="nav-item">
+                          <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        
+                       </ul>
+                        </div>
+                        <hr>
+                  </nav> 
+
+<!-- Page Title -->
+<h1 class="mt-2 text-info" id="topHeader" style="text-align: center;">Contact</h1>
+
+
+      
+<!--Sections-->
+
+<div class="container col-lg-10 formArea">
+<div="row">
+
+        <p class="formDesc">Got something to say? Tell us here!</p>
+        <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We will send our reply here</small>
+                </div>
+               
+                <div class="form-group">
+                  <label for="selectOption">What would you like to do?</label>
+                  <select class="form-control" id="selectOption">
+                    <option>Submit learning resource</option>
+                    <option>Ask question or make correction</option>
+                    <option>Report technical issue</option>
+                    <option>Enquire about a job</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="messageArea">Message</label>
+                  <textarea class="form-control" id="messageArea" rows="4" minlength="50" placeholder="Please be as detailed as possible..."></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputFile">File upload</label>
+                  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                  <small id="fileHelp" class="form-text text-muted">Upload your resource, CV or screenshot here.</small>
+                </div>
+        
+                
+                <button type="submit" class="btn subBtn btn-lg">Submit</button>
+              </form>
+            </div>
+        </div>
+
+<!-- Footer -->
+
+<div class="footer">
+        <div class="contain">
+        <div class="col">
+          <h1 class="colTitle">Navigation</h1>
+          <ul>
+          </ul>
+            <li>Home</li>
+            <li>A-Z Glossary</li>
+            <li>The Basics</li>
+            <li>Resources</li>
+            <li>News</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1 class="colTitle">Resources</h1>
+          <ul>
+            <li>English</li>
+            <li>Maths</li>
+            <li>Science</li>
+            <li>ICT</li>
+            <li>History</li> 
+          </ul>
+        </div>
+        <div class="col">
+          <h1 class="colTitle">More</h1>
+          <ul>
+    
+            <li>Contact Us</li>
+            <li>FAQ</li>
+            <li>Help</li>
+          </ul>
+        </div>
+        </div>
+        <div class="col social">
+          <h1 class="colTitle">Follow us</h1>
+          <ul>
+            <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+            <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+            <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+          </ul>
+        </div>
+      <div class="clearfix"></div>
+      </div>
+      </div>
+	<!-- jQuery  JS-->
+		<script src="js/jquery-3.3.1.js"></script> 
+	
+	<!-- Bootstrap JS -->
+        <script src='js/bootstrap.min.js'></script> 
+        
+        
+</body>
+</html>
+
+<!-- Licenses to credit later 
+
+
+Logo font: https://www.dafont.com/master-of-comics.font?text=Scratch+Post&psize=l&back=theme
+
+-->
+
