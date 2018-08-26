@@ -18,6 +18,10 @@
   
  
 
+p, label {
+  
+	font-family: "Molengo", sans-serif;
+}
 /* Navigation bar */
 
 .navbar {
@@ -98,47 +102,27 @@
    }
    
 
-/* Footer */
-	
+   /* Form */
 
-	
-    footer {
-      position: fixed;
-   left: 0;
-   bottom: 1.3em;
-   width: 100%;
-	display: block;	
-    background-color: white;
-    padding: 1em;
-    font-size: small;
-    font-style: italic;
-	text-align: center;
-	
-	}
-	
-	.fa {
-    margin-left: 0.3em;
-    font-size: 20px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-	color: #4484CE;
-	}
-
-	
-
-/* Form */
-
-    .formArea {
+   .formArea {
         
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1em;
+    margin-bottom: 3em;
         
 }
     .subBtn {
         background-color: #ff9800;
         margin-top:.5em;
+        color: white;
+        font-weight: 600;
+    }
+
+    .subBtn:hover {
+      
+  font-weight: 600;
+  background-color: #008080;
+    color: white;
     }
 
     label {
@@ -151,6 +135,98 @@
         font-style:italic;
 
     }
+
+/* Footer */
+	
+
+.page-footer {
+  background-color: #008080;
+}
+
+.page-footer, .page-footer a {
+  color: white;
+}
+
+.page-footer a:hover {
+  color:#ff9800;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h6 { 
+  font-weight: bold;
+  text-transform: uppercase;
+  color:white;
+}
+
+.fa {
+  color: white;
+}
+
+#footerHR {
+
+  height:3px;
+  border-color:#ffffff;
+  width: 100%;
+}
+  
+/*Welcome column*/
+
+#welcomeMsg {
+text-align: center;
+}
+
+i:hover {
+ font-weight: bolder;
+ color:#ff9800;
+}
+
+.footHR {
+  text-align: left;
+  color: white;
+}
+.nlSend {
+  background-color: #ff9800;
+  font-weight: 500;
+  color: white;
+}
+
+.close {
+  color: black;
+}
+
+.nlSend:hover {
+  background-color: #008080;
+  color: white;
+}
+
+.modal-header {
+  
+  background-color:#ff9800;
+}
+
+.modal-title {
+  color: white;
+  font-family: 'Roboto';
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase
+  
+}
+
+#subscribeBtn {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+#subscribeBtn:hover {
+  background-color: #ff9800;
+  color: white;
+  font-weight: 600;
+}
   </style>
 </head>
 
@@ -237,24 +313,170 @@
             </div>
         </div>
 
-<!-- Footer -->
+  
 
-<footer>
-    <hr>
-  <div class="row" id="footer">
-          <div class="col-md-6 col-sm-4">
-          <a href="https://en.scratch-wiki.info/wiki/Scratch_Terms_Glossary">to attribute later</a>
+ <!-- Footer -->
+ <footer class="page-footer font-small pt-4">
+  
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+  
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+  
+          <!-- Welcome  Message column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" style="font-size:large;">
+            
+            <p id="welcomeMsg">Get your tech terminology up to <i>scratch</i>, download hundreds 
+              of fun KS2 resources and keep abreast of ICT news! <p>
+
+                      <!-- Subscribe Modal -->
+
+                      <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100">Recieve free Scratch lesson plans</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body mx-3">
+                                    <div class="md-form mb-5">
+                                        <i class="fa fa-user prefix grey-text"></i>
+                                        
+                                        <label data-error="wrong" data-success="right">First Name</label>
+                                        <input type="text" class="form-control validate" placeholder="e.g Jade Smith">
+                                    </div>
+
+                                    <div class="md-form mb-4">
+                                        <i class="fa fa-envelope prefix grey-text"></i>
+                                        <label data-error="wrong" data-success="right">Email Address</label>
+                                        <input type="email" class="form-control validate" placeholder="e.g jade.smith@mail.com">
+                                    </div>
+
+                                    
+                                    <input type="checkbox" style="margin-right:1em;"><label style="color:grey;font-size:small;"> I agree to the Terms &amp; Conditions</label>
+
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <button class="btn btn-lg nlSend">Subscribe<i class="fa fa-paper-plane-o ml-1"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                      
+                        <a href="" class="btn btn-default btn-lg btn-rounded mb-4" id="subscribeBtn" 
+                        data-toggle="modal" data-target="#modalSubscriptionForm">Subscribe</a>
+                        
+                        <p style="font-size: small;">New Scratch lessons to your inbox weekly!</p>
+                    </div>
           </div>
-    <div class="col-md-6 col-sm-4">
-      <div class="social-icons pull-right">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-pinterest"></a>
 
+          <!-- Grid column -->
+  
+          <hr class="w-100 clearfix d-md-none">
+  
+          <!-- Nav links column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class=" mb-4">Navigation</h6>
+      
+            <p>
+              <a href="index.html">Home</a>
+            </p>
+            <p>
+              <a href="terms.html">A-Z Glossary</a>
+            </p>
+            <p>
+              <a href="basics.html">Basics</a>
+            </p>
+            <p>
+              <a href="resources.html">Resources</a>
+            </p>
+            <p>
+              <a href="news.html">News</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <hr class="w-100 clearfix d-md-none">
+  
+          <!-- Useful links column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class=" mb-4 ">Useful Links</h6>
+         
+            <p>
+              <a href="contact.html">Contact Us</a>
+            </p>
+            <p>
+              <a href="faq.html">FAQ</a>
+            </p>
+            <p>
+              <a href="help.html">Help</a>
+            </p>
+        
+          </div>
+  
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none">
+  
+        </div>
+        <!-- Footer links -->
+  
+        <hr id="footerHR">
+  
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8">
+  
+            <!--Copyright-->
+            <p class="text-center text-md-left"><small>© 2018 Copyright
+              <a href="#">
+                <i>Scratch Post</i></small>
+              </a>
+            </p>
+  
+          </div>
+  
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+  
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://twitter.com/The_ScratchPost">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-pinterest"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-  </div>
-  </footer>
+  
+    </footer>
+  <!-- Footer -->
+
 	<!-- jQuery  JS-->
 		<script src="js/jquery-3.3.1.js"></script> 
 	
