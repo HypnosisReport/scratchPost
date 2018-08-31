@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Resources</title>
+  <title>News | Page 3</title>
  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +30,11 @@
   font-weight: 700;
 text-transform: uppercase;}
   
+p, label {
+  
+	font-family: "Molengo", sans-serif;
+  
+}
 /* Navigation bar */
 
 .navbar {
@@ -100,8 +105,26 @@ text-transform: uppercase;}
 #topHeader {
     font-size: 2em;
     word-break: break-all;
+    padding-bottom: .6em;
 }
  
+ /* Widget sidebar */
+
+ .card-header {
+   background-color:#008080;
+   color: white;
+ }
+
+ card li {
+   color:#ff9800;
+ }
+
+ .btnSearch {
+   background-color:#ff9800;
+   color: white;
+   padding-left: -0.6em;
+ }
+
 /* Horizontal rule */
 
 	hr {
@@ -110,114 +133,22 @@ text-transform: uppercase;}
    }
    
 
-/* Footer */
-
-	
-    footer {
-	
-	display: block;	
-    background-color: white;
-    padding: 1em;
-    font-size: small;
-    font-style: italic;
-	text-align: center;
-	
-	}
-	
-	.fa {
-    margin-left: 0.3em;
-    font-size: 20px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-	color: #4484CE;
-	}
-
-
-
-/* Resource Grid */
-
-  * {
-    box-sizing: border-box;
-} 
+/* News Posts */
 
 .card-title {
-   text-align: center;
- }
- 
-.row {
-    margin: 8px -16px;
+  text-align: center;
+}
+.newsPost {
+  border: 0px;
 }
 
-#resourceGrid {
-	font-family: "Molengo", sans-serif;
-	color: black;
-  padding: 3em;
-	}
-
-/* Column Padding */
-.row,
-.row > .column {
-    padding: 8px;
+.newsPost a {
+  color: #ff9800;
 }
 
-.topic-title {
-  Font-Family: 'Roboto', Sans-Serif;
-  font-weight: 700;
-  text-decoration: none;
-  padding-top: .5em;
+h2 {
   
-}
-
-/* 3 Columns */
-.column {
-    float: left;
-    width: 25%;
-    display: none; /* Hide columns by default */
-}
-
-/* Clear Floats */ 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-
-.content {
-    background-color: white;
-   
-    text-align: center;
-   
-}
-
-
-.topic-img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/*  Show class added to filtered elements */
-.show {
-    display: block;
-}
-
-/* Resource grid buttons */
-.gridBtn {
-  cursor: pointer;
-  background-color: #5bc0de;
-}
-
-.gridBtn:hover {
-  background-color: #ddd;
-
-}
-
-#myBtnContainer {
-padding-top: .5em;
-margin:auto;
-
+  text-align: center;
 }
 
   /* Pagination */
@@ -226,6 +157,107 @@ margin:auto;
 	  margin-bottom: 1em;
 	  margin-top:0.5em;
 	}
+
+  /* Footer */
+	
+
+.page-footer {
+  background-color: #008080;
+  margin-top: 3em;
+}
+
+.page-footer, .page-footer a {
+  color: white;
+}
+
+.page-footer a:hover {
+  color:#ff9800;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h6 { 
+  font-weight: bold;
+  text-transform: uppercase;
+  color:white;
+}
+
+.fa {
+  color: white;
+}
+
+#footerHR {
+
+  height:3px;
+  border-color:#ffffff;
+  width: 100%;
+}
+  
+/*Welcome column*/
+
+#welcomeMsg {
+text-align: center;
+}
+
+i:hover {
+ font-weight: bolder;
+ color:#ff9800;
+}
+
+.footHR {
+  text-align: left;
+  color: white;
+}
+.nlSend {
+  background-color: #ff9800;
+  font-weight: 500;
+  color: white;
+}
+
+
+/* Modal */
+
+.close {
+  color: black;
+}
+
+.nlSend:hover {
+  background-color: #008080;
+  color: white;
+}
+
+.modal-header {
+  
+  background-color:#ff9800;
+}
+
+.modal-title {
+  color: white;
+  font-family: 'Roboto';
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase
+  
+}
+
+#subFields {
+color:#ff9800;
+font-weight: bold;
+}
+
+#subscribeBtn {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+#subscribeBtn:hover {
+  background-color: #ff9800;
+  color: white;
+  font-weight: 600;
+}
 
   </style>
 </head>
@@ -276,41 +308,37 @@ margin:auto;
 
   <div class="row">
 
-    <!-- Blog Entries Column -->
-     <div class="col-md-12">
-        
-    </div>
+    <!-- News Entries Column -->
+    
     <div class="col-md-8">
 
   
-      <!-- Blog Post -->
-      <div class="card mb-4 blogPost">
+      <!-- News Post -->
+      <div class="card mb-4 newsPost">
         <a href="newsPost1.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
         <div class="card-body">
-          <h2 class="card-title"><a href="newsPost1.html">Rising number of GCSE students dropping ICT</a></h2>
+          <h3 class="card-title"><a href="newsPost1.html">Rising number of GCSE students dropping ICT</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-          <a href="newsPost1.html" class="btn btn-primary">Read More &rarr;</a>
         </div>
       </div>
 
-
-   <!-- Blog Post -->
-      <div class="card mb-4 blogPost">
+<hr>
+   <!-- News Post -->
+      <div class="card mb-4 newsPost">
         <a href="newsPost2.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
         <div class="card-body">
-          <h2 class="card-title"><a href="newsPost2.html">How do we solve the women in STEM problem?</a></h2>
+          <h3 class="card-title"><a href="newsPost2.html">How do we solve the women in STEM problem?</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-          <a href="newsPost1.html" class="btn btn-primary">Read More &rarr;</a>
         </div>
       </div>
 
-      <!-- Blog Post -->
-      <div class="card mb-4 blogPost">
+<hr>
+      <!-- News Post -->
+      <div class="card mb-4 newsPost">
         <a href="newsPost3.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
         <div class="card-body">
-          <h2 class="card-title"><a href="newsPost3.html">Studies show programming improves maths skills</a></h2>
+          <h3 class="card-title"><a href="newsPost3.html">Studies show programming improves maths skills</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-          <a href="newsPost1.html" class="btn btn-primary">Read More &rarr;</a>
         </div>
       </div>
 
@@ -323,41 +351,41 @@ margin:auto;
       <!-- Search Widget -->
         
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search news">
+            <input type="text" class="form-control"placeholder="Search news...">
             <span class="input-group-btn">
-              <button class="btn btn-secondary" type="button">Search</button>
+              <button class="btn btnSearch" type="button">Search</button>
             </span>
         </div>
       
 
       <!-- Categories Widget -->
-      <div class="card my-4">
-        <h3 class="card-header">Categories</h3>
+      <div class="card my-3">
+        <h5 class="card-header">Categories</h3>
         <div class="card-body">
           <div class="row">
             <div class="col-lg-6">
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#">Mathematics</a>
+                  <a href="#">SATs</a>
                 </li>
                 <li>
-                  <a href="#">English Lit</a>
+                  <a href="#">Pedagogy</a>
                 </li>
                 <li>
-                  <a href="#">ICT</a>
+                  <a href="#">Scratch</a>
                 </li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#">Art</a>
+                  <a href="#">Edtech</a>
                 </li>
                 <li>
-                  <a href="#">P.E</a>
+                  <a href="#">Government</a>
                 </li>
                 <li>
-                  <a href="#">Religion</a>
+                  <a href="#">Research</a>
                 </li>
               </ul>
             </div>
@@ -410,20 +438,166 @@ margin:auto;
 <!-- /.container -->
 
       
-    <!-- Footer -->
-<hr>
-  <footer>
-    <div class="row" id="footer">
-      <div class="col-md-12 col-sm-4">
-        <div class="social-icons pull-right">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-pinterest"></a>
-
-		</div>
-		</div>
-	</div>
-    </footer>
+ <!-- Footer -->
+ <footer class="page-footer font-small pt-4">
+    
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+    
+          <!-- Footer links -->
+          <div class="row text-center text-md-left mt-3 pb-3">
+    
+            <!-- Welcome  Message column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" style="font-size:large;">
+              
+              <p id="welcomeMsg">Get your tech terminology up to <i>scratch</i>, download hundreds 
+                of fun KS2 resources and keep abreast of ICT news! <p>
+  
+                        <!-- Subscribe Modal -->
+  
+                        <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                      <h4 class="modal-title w-100">Get free Scratch lesson plans</h4>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body mx-3">
+                                      <div class="md-form mb-5">
+                                          <i class="fa fa-user prefix grey-text"></i>
+                                          
+                                          <label data-error="wrong" id="subFields" data-success="right">First Name</label>
+                                          <input type="text" class="form-control validate" placeholder="e.g Jade Smith">
+                                      </div>
+  
+                                      <div class="md-form mb-4">
+                                          <i class="fa fa-envelope prefix grey-text"></i>
+                                          <label data-error="wrong" id="subFields" data-success="right">Email Address</label>
+                                          <input type="email" class="form-control validate" placeholder="e.g jade.smith@mail.com">
+                                      </div>
+  
+                                      
+                                      <input type="checkbox" style="margin-right:1em;"><label style="color:grey;font-size:small;"> I agree to the Terms &amp; Conditions</label>
+  
+                                  </div>
+                                  <div class="modal-footer d-flex justify-content-center">
+                                      <button class="btn btn-lg nlSend">Subscribe<i class="fa fa-paper-plane-o ml-1"></i></button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="text-center">
+                        
+                          <a href="" class="btn btn-default btn-lg btn-rounded mb-4" id="subscribeBtn" 
+                          data-toggle="modal" data-target="#modalSubscriptionForm">Subscribe</a>
+                          
+                          <p style="font-size: small;">New Scratch lessons to your inbox weekly!</p>
+                      </div>
+            </div>
+  
+            <!-- Grid column -->
+    
+            <hr class="w-100 clearfix d-md-none">
+    
+            <!-- Nav links column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class=" mb-4">Navigation</h6>
+        
+              <p>
+                <a href="index.html">Home</a>
+              </p>
+              <p>
+                <a href="terms.html">A-Z Glossary</a>
+              </p>
+              <p>
+                <a href="basics.html">Basics</a>
+              </p>
+              <p>
+                <a href="resources.html">Resources</a>
+              </p>
+              <p>
+                <a href="news.html">News</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="w-100 clearfix d-md-none">
+    
+            <!-- Useful links column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class=" mb-4 ">Useful Links</h6>
+           
+              <p>
+                <a href="contact.html">Contact Us</a>
+              </p>
+              <p>
+                <a href="faq.html">FAQ</a>
+              </p>
+              <p>
+                <a href="help.html">Help</a>
+              </p>
+          
+            </div>
+    
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+    
+          </div>
+          <!-- Footer links -->
+    
+          <hr id="footerHR">
+    
+          <!-- Grid row -->
+          <div class="row d-flex align-items-center">
+    
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+    
+              <!--Copyright-->
+              <p class="text-center text-md-left"><small>© 2018 Copyright
+                <a href="#">
+                  <i>Scratch Post</i></small>
+                </a>
+              </p>
+    
+            </div>
+    
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+    
+              <!-- Social buttons -->
+              <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://twitter.com/The_ScratchPost">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fa fa-google-plus"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fa fa-pinterest"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </footer>
     
 
 </body>
