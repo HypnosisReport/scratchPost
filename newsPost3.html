@@ -22,6 +22,13 @@
   
 }
 
+  
+p, .commentSection p {
+  
+	font-family: "Molengo", sans-serif;
+  
+}
+
   .Featured {
     font-size: 1.5em;
     word-break: break-all;
@@ -102,6 +109,7 @@ text-transform: uppercase;
     font-size: 2em;
 }
  
+ 
 
 /* Horizontal rule */
 
@@ -122,12 +130,57 @@ text-transform: uppercase;
 
 /* Comments */
 
+.tagType {
+  color:#008080;
+}
+
+.tagType:hover {
+  color:#ff9800;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .commentSection {
   width: 96%;
 }
   
+.commentSection button {
+  background-color: black;
+  border-color: black;
+}
+
+.commentSection button:hover {
+  background-color: #ff9800;
+  border-color: #ff9800;
+}
+  
  /* Resource sidebar */
  
+ .card-header {
+   background-color:#008080;
+   color: white;
+ }
+
+ .list-unstyled a {
+color: black;
+}
+
+.list-unstyled a:hover {
+color: #ff9800;
+font-weight: 600;
+text-decoration: none;
+}
+
+ .btnSearch {
+   background-color:black;
+   color: white;
+   padding-left: -0.6em;
+ }
+
+.btnSearch:hover {
+background-color:  #ff9800
+ }
+
  .topic-img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-top: .2em;
@@ -152,29 +205,106 @@ text-transform: uppercase;
 
 
 	
-/* Footer */
+ /* Footer */
 	
-    footer {
-	
-	display: block;	
-    background-color: white;
-    padding: 1em;
-    font-size: small;
-    font-style: italic;
-	text-align: center;
-	
-	}
-	
-	.fIcon {
-    margin-left: 0.3em;
-    font-size: 20px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-	color: #4484CE;
-	}
 
+ .page-footer {
+  background-color: #008080;
+  margin-top: 3em;
+}
+
+.page-footer, .page-footer a {
+  color: white;
+}
+
+.page-footer a:hover {
+  color:#ff9800;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h6 { 
+  font-weight: bold;
+  text-transform: uppercase;
+  color:white;
+}
+
+.fa {
+  color: white;
+}
+
+#footerHR {
+
+  height:3px;
+  border-color:#ffffff;
+  width: 100%;
+}
+  
+/*Welcome column*/
+
+#welcomeMsg {
+text-align: center;
+}
+
+i:hover {
+ font-weight: bolder;
+ color:#ff9800;
+}
+
+.footHR {
+  text-align: left;
+  color: white;
+}
+.nlSend {
+  background-color: #ff9800;
+  font-weight: 500;
+  color: white;
+}
+
+
+/* Modal */
+
+.close {
+  color: black;
+}
+
+.nlSend:hover {
+  background-color: #008080;
+  color: white;
+}
+
+.modal-header {
+  
+  background-color:#ff9800;
+}
+
+.modal-title {
+  color: white;
+  font-family: 'Roboto';
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase
+  
+}
+
+#subFields {
+color:#ff9800;
+font-weight: bold;
+}
+
+#subscribeBtn {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+#subscribeBtn:hover {
+  background-color: #ff9800;
+  color: white;
+  font-weight: 600;
+}
 
   </style>
 </head>
@@ -225,8 +355,8 @@ text-transform: uppercase;
 <div class="container">
    <div class="row">
 
-        <div class="col-lg-9">
-            <img class="img-fluid rounded" id="newsImg" src="http://placehold.it/900x400" alt="">
+        <div class="col-lg-8">
+            <img class="img-fluid rounded" id="newsImg" src="images/newsImages/closeCode.jpg" alt="">
     
 <h1 class="mt-2 text-info" id="topHeader" style="text-align: center;">Studies show programming improves maths skills</h1>
 <div class="container">
@@ -251,9 +381,10 @@ text-transform: uppercase;
         <hr>
 
   <!-- Date -->
-        <p>Posted on December 13th, 4:00PM</p>
+        <p>Posted on January 1st, 1:31PM</p>
         
-
+        <p style="font-weight:bold;">Tagged: <a href="#" class="tagType">Research</a>, <a href="#" class="tagType">Scratch</a></p>
+        
         <!-- Comments Form -->
         <div class="commentSection">
         <div class="card my-4">
@@ -270,32 +401,26 @@ text-transform: uppercase;
 
         <!-- Single Comment -->
         <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+          <img class="d-flex mr-3 rounded-circle" src="images/users/anton.png" alt="">
           <div class="media-body">
-            <h5 class="mt-0">George Matthews</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h5 class="mt-0">Anton Batjalias</h5>
+            <p>Cras sit amet nibh libero, in gravida nulla. </p>
           </div>
         </div>
 
         <!-- Comment with nested comments -->
         <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+          <img class="d-flex mr-3 rounded-circle" src="images/users/sophiem.png" alt="">
           <div class="media-body">
-            <h5 class="mt-0">Saffron Khan</h5>
-            A very worrying trend.
+            <h5 class="mt-0">Sophie  Mitchell</h5>
+            <p>Cras sit amet nibh libero, in gravida nulla. </p>
+
+          
 
             <div class="media mt-4">
-              <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+              <img class="d-flex mr-3 rounded-circle" src="images/users/abigail.png" alt="">
               <div class="media-body">
-                <h5 class="mt-0">Amber White</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </div>
-
-            <div class="media mt-4">
-              <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Paul Kennedy</h5>
+                <h5 class="mt-0">Abigail Fraser-Kelly</h5>
                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </div>
             </div>
@@ -305,84 +430,233 @@ text-transform: uppercase;
       </div>
       </div>
 
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-3">
-        
-                  <!-- Search Widget -->
-                    
-                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search news">
-                        <span class="input-group-btn">
-                          <button class="btn btn-secondary" type="button">Search</button>
-                        </span>
-                    </div>
-                  
-        
-        
-                  <!-- Categories Widget -->
-                  <div class="card my-4">
-                    <h3 class="card-header">Categories</h3>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <ul class="list-unstyled mb-0">
-                            <li>
-                              <a href="#">Group Work</a>
-                            </li>
-                            <li>
-                              <a href="#">Homework</a>
-                            </li>
-                            <li>
-                              <a href="#">HistoryFreebies</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-6">
-                          <ul class="list-unstyled mb-0">
-                            <li>
-                              <a href="#">ICT</a>
-                            </li>
-                            <li>
-                              <a href="#">Art</a>
-                            </li>
-                            <li>
-                              <a href="#">Literature</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Side Widget -->
-                  <div class="card my-4">
-                   <a class="twitter-timeline" href="https://twitter.com/The_ScratchPost?ref_src=twsrc%5Etfw">Tweets by The_ScratchPost</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                  </div>
-        
-                </div>
-        
-              </div>
-              <!-- /.row -->
-        </div>
-            </div>
-            <!-- /.container -->
-        
+     <!-- Sidebar Widgets Column -->
+    <div class="col-md-4">
+      
             
+            <!-- Search Widget -->
+              
+                <div class="input-group">
+                  <input type="text" class="form-control"placeholder="Search news...">
+                  <span class="input-group-btn">
+                    <button class="btn btnSearch" type="button">Search</button>
+                  </span>
+              </div>
+            
+      
+            <!-- Categories Widget -->
+            <div class="card my-3">
+              <h5 class="card-header">Categories</h3>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#">SATs</a>
+                      </li>
+                      <li>
+                        <a href="#">Pedagogy</a>
+                      </li>
+                      <li>
+                        <a href="#">Scratch</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#">Edtech</a>
+                      </li>
+                      <li>
+                        <a href="#">Government</a>
+                      </li>
+                      <li>
+                        <a href="#">Research</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+             <!-- Side Widget -->
+            <div class="card my-4">
+             <a class="twitter-timeline" href="https://twitter.com/The_ScratchPost?ref_src=twsrc%5Etfw">Tweets by The_ScratchPost</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+      
+      
+          </div>
+      
+        </div>
+        <!-- /.row -->
+      
+      </div>
+      <!-- /.container -->
+      
 <!-- Footer -->
-<hr>
-  <footer>
-    <div class="row" id="footer">
-      <div class="col-md-12 col-sm-4">
-        <div class="social-icons pull-right">
-          <a href="#" class="fa fa-facebook fIcon"></a>
-          <a href="#" class="fa fa-twitter fIcon"></a>
-          <a href="#" class="fa fa-pinterest fIcon"></a>
+<footer class="page-footer font-small pt-4">
+  
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+  
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+  
+          <!-- Welcome  Message column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" style="font-size:large;">
+            
+            <p id="welcomeMsg">Get your tech terminology up to <i>scratch</i>, download hundreds 
+              of fun KS2 resources and keep abreast of ICT news! <p>
 
-		</div>
-		</div>
-	</div>
-	</footer>
+                      <!-- Subscribe Modal -->
+
+                      <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100">Get free Scratch lesson plans</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body mx-3">
+                                    <div class="md-form mb-5">
+                                        <i class="fa fa-user prefix grey-text"></i>
+                                        
+                                        <label data-error="wrong" id="subFields" data-success="right">First Name</label>
+                                        <input type="text" class="form-control validate" placeholder="e.g Jade Smith">
+                                    </div>
+
+                                    <div class="md-form mb-4">
+                                        <i class="fa fa-envelope prefix grey-text"></i>
+                                        <label data-error="wrong" id="subFields" data-success="right">Email Address</label>
+                                        <input type="email" class="form-control validate" placeholder="e.g jade.smith@mail.com">
+                                    </div>
+
+                                    
+                                    <input type="checkbox" style="margin-right:1em;"><label style="color:grey;font-size:small;"> I agree to the Terms &amp; Conditions</label>
+
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <button class="btn btn-lg nlSend">Subscribe<i class="fa fa-paper-plane-o ml-1"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                      
+                        <a href="" class="btn btn-default btn-lg btn-rounded mb-4" id="subscribeBtn" 
+                        data-toggle="modal" data-target="#modalSubscriptionForm">Subscribe</a>
+                        
+                        <p style="font-size: small;">New Scratch lessons to your inbox weekly!</p>
+                    </div>
+          </div>
+
+          <!-- Grid column -->
+  
+          <hr class="w-100 clearfix d-md-none">
+  
+          <!-- Nav links column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class=" mb-4">Navigation</h6>
+      
+            <p>
+              <a href="index.html">Home</a>
+            </p>
+            <p>
+              <a href="terms.html">A-Z Glossary</a>
+            </p>
+            <p>
+              <a href="basics.html">Basics</a>
+            </p>
+            <p>
+              <a href="resources.html">Resources</a>
+            </p>
+            <p>
+              <a href="news.html">News</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <hr class="w-100 clearfix d-md-none">
+  
+          <!-- Useful links column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class=" mb-4 ">Useful Links</h6>
+         
+            <p>
+              <a href="contact.html">Contact Us</a>
+            </p>
+          
+            <p>
+              <a href="help.html">Help</a>
+            </p>
+        
+          </div>
+  
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none">
+  
+        </div>
+        <!-- Footer links -->
+  
+        <hr id="footerHR">
+  
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8">
+  
+            <!--Copyright-->
+            <p class="text-center text-md-left"><small>© 2018 Copyright
+              <a href="#">
+                <i>Scratch Post</i></small>
+              </a>
+            </p>
+  
+          </div>
+  
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+  
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://twitter.com/The_ScratchPost">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-pinterest"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </footer>
+  
+
+</body>
+</html>
+
 
 	<!-- jQuery  JS-->
 		<script src="js/jquery-3.3.1.js"></script> 
@@ -392,9 +666,3 @@ text-transform: uppercase;
 </body>
 </html>
 
-<!-- Licenses to credit later 
-
-
-Logo font: https://www.dafont.com/master-of-comics.font?text=Scratch+Post&psize=l&back=theme
-
--->
