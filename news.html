@@ -107,7 +107,6 @@ p, label {
     word-break: break-all;
     padding-bottom: .6em;
 }
- 
  /* Widget sidebar */
 
 
@@ -164,6 +163,16 @@ background-color:  #ff9800
 .newsPost a:hover {
   color: #ff9800;
   font-weight: 600;
+  text-decoration: none;
+}
+
+.tagType {
+  color:#008080;
+}
+
+.tagType:hover {
+  color:#ff9800;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -337,32 +346,44 @@ font-weight: bold;
   
       <!-- News Post -->
       <div class="card mb-4 newsPost">
-        <a href="newsPost1.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
+        <a href="news_rising.html"><img class="card-img-top" src="images\newsImages\cropabcBlocks.jpg" alt="Card image cap"></a>
         <div class="card-body">
-          <h3 class="card-title"><a href="newsPost1.html">Rising number of GCSE students dropping ICT</a></h2>
+          <h3 class="card-title"><a href="news_rising.html">Rising number of GCSE students dropping ICT</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
         </div>
       </div>
+      
+        <!-- Tags -->
+              <p style="font-weight:bold;">Tagged: <a href="#" class="tagType">Research</a>, <a href="#" class="tagType">Pedagogy</a></p>
+              
 
 <hr>
    <!-- News Post -->
       <div class="card mb-4 newsPost">
-        <a href="newsPost2.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
+        <a href="news_women.html"><img class="card-img-top" src="images\newsImages\cropbabiesTablet.jpg" alt="Card image cap"></a>
         <div class="card-body">
-          <h3 class="card-title"><a href="newsPost2.html">How do we solve the women in STEM problem?</a></h2>
+          <h3 class="card-title"><a href="news_women.html">How do we solve the women in STEM problem?</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
         </div>
       </div>
 
+         <!-- Tags -->
+         <p style="font-weight:bold;">Tagged: <a href="#" class="tagType">Government</a>, <a href="#" class="tagType">Pedagogy</a></p>
+         
+
 <hr>
       <!-- News Post -->
       <div class="card mb-4 newsPost">
-        <a href="newsPost3.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
+        <a href="news_maths.html"><img class="card-img-top" src="images\newsImages\cropgirlVR.jpg" alt="Card image cap"></a>
         <div class="card-body">
-          <h3 class="card-title"><a href="newsPost3.html">Studies show programming improves maths skills</a></h2>
+          <h3 class="card-title"><a href="news_maths.html">Studies show programming improves maths skills</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
         </div>
       </div>
+
+         <!-- Tags -->
+         <p style="font-weight:bold;">Tagged: <a href="#" class="tagType">Edtech</a>, <a href="#" class="tagType">Scratch</a></p>
+         
 
     </div>
 
@@ -431,7 +452,7 @@ font-weight: bold;
 <!-- /.container -->
 
   <!-- Pagination -->
-  <ul class="pagination pagination-md justify-content-center">
+  <ul class="pagination pagination-md justify-content-center" style="color:#ff9800;">
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
