@@ -102,6 +102,7 @@ text-transform: uppercase;
     font-size: 2em;
 }
  
+ 
 
 /* Horizontal rule */
 
@@ -128,6 +129,31 @@ text-transform: uppercase;
   
  /* Resource sidebar */
  
+ .card-header {
+   background-color:#008080;
+   color: white;
+ }
+
+ .list-unstyled a {
+color: black;
+}
+
+.list-unstyled a:hover {
+color: #ff9800;
+font-weight: 600;
+text-decoration: none;
+}
+
+ .btnSearch {
+   background-color:black;
+   color: white;
+   padding-left: -0.6em;
+ }
+
+.btnSearch:hover {
+background-color:  #ff9800
+ }
+
  .topic-img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-top: .2em;
@@ -225,8 +251,8 @@ text-transform: uppercase;
 <div class="container">
    <div class="row">
 
-        <div class="col-lg-9">
-            <img class="img-fluid rounded" id="newsImg" src="http://placehold.it/900x400" alt="">
+        <div class="col-lg-8">
+            <img class="img-fluid rounded" id="newsImg" src="images/newsImages/abcBlocks.jpg" alt="">
     
 <h1 class="mt-2 text-info" id="topHeader" style="text-align: center;">Rising number of students dropping ICT at GCSE</h1>
 <div class="container">
@@ -305,70 +331,70 @@ text-transform: uppercase;
       </div>
       </div>
 
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-3">
-        
-                  <!-- Search Widget -->
-                    
-                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search news">
-                        <span class="input-group-btn">
-                          <button class="btn btn-secondary" type="button">Search</button>
-                        </span>
-                    </div>
-                  
-        
-        
-                  <!-- Categories Widget -->
-                  <div class="card my-4">
-                    <h3 class="card-header">Categories</h3>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <ul class="list-unstyled mb-0">
-                            <li>
-                              <a href="#">Group Work</a>
-                            </li>
-                            <li>
-                              <a href="#">Homework</a>
-                            </li>
-                            <li>
-                              <a href="#">HistoryFreebies</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-lg-6">
-                          <ul class="list-unstyled mb-0">
-                            <li>
-                              <a href="#">ICT</a>
-                            </li>
-                            <li>
-                              <a href="#">Art</a>
-                            </li>
-                            <li>
-                              <a href="#">Literature</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-        
-                  <!-- Side Widget -->
-                  <div class="card my-4">
-                   <a class="twitter-timeline" href="https://twitter.com/The_ScratchPost?ref_src=twsrc%5Etfw">Tweets by The_ScratchPost</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                  </div>
-        
-                </div>
-        
-              </div>
-              <!-- /.row -->
-        </div>
-            </div>
-            <!-- /.container -->
-        
+     <!-- Sidebar Widgets Column -->
+    <div class="col-md-4">
+      
             
+            <!-- Search Widget -->
+              
+                <div class="input-group">
+                  <input type="text" class="form-control"placeholder="Search news...">
+                  <span class="input-group-btn">
+                    <button class="btn btnSearch" type="button">Search</button>
+                  </span>
+              </div>
+            
+      
+            <!-- Categories Widget -->
+            <div class="card my-3">
+              <h5 class="card-header">Categories</h3>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#">SATs</a>
+                      </li>
+                      <li>
+                        <a href="#">Pedagogy</a>
+                      </li>
+                      <li>
+                        <a href="#">Scratch</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#">Edtech</a>
+                      </li>
+                      <li>
+                        <a href="#">Government</a>
+                      </li>
+                      <li>
+                        <a href="#">Research</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+             <!-- Side Widget -->
+            <div class="card my-4">
+             <a class="twitter-timeline" href="https://twitter.com/The_ScratchPost?ref_src=twsrc%5Etfw">Tweets by The_ScratchPost</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+      
+      
+          </div>
+      
+        </div>
+        <!-- /.row -->
+      
+      </div>
+      <!-- /.container -->
+      
 <!-- Footer -->
 <hr>
   <footer>
@@ -391,10 +417,3 @@ text-transform: uppercase;
     	<script src='js/bootstrap.min.js'></script> 
 </body>
 </html>
-
-<!-- Licenses to credit later 
-
-
-Logo font: https://www.dafont.com/master-of-comics.font?text=Scratch+Post&psize=l&back=theme
-
--->
