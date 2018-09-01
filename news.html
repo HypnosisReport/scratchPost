@@ -110,6 +110,17 @@ p, label {
  
  /* Widget sidebar */
 
+
+.list-unstyled a {
+color: black;
+}
+
+.list-unstyled a:hover {
+color: #ff9800;
+font-weight: 600;
+text-decoration: none;
+}
+
  .card-header {
    background-color:#008080;
    color: white;
@@ -120,9 +131,13 @@ p, label {
  }
 
  .btnSearch {
-   background-color:#ff9800;
+   background-color:black;
    color: white;
    padding-left: -0.6em;
+ }
+
+.btnSearch:hover {
+background-color:  #ff9800
  }
 
 /* Horizontal rule */
@@ -143,7 +158,13 @@ p, label {
 }
 
 .newsPost a {
+  color: black;
+}
+
+.newsPost a:hover {
   color: #ff9800;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 h2 {
@@ -287,13 +308,13 @@ font-weight: bold;
 	  <li><a href="index.html"><img id="logo-navbar-middle" src="images/logo.png" width="206" alt="Scratch Post logo"></a></li>
 	   <li class="nav-item">
       
-	    <li class="nav-item active">
-        <a class="nav-link" href="resources.html">Resources <span class="sr-only">(current)</a>
+	    <li class="nav-item">
+        <a class="nav-link" href="resources.html">Resources</a>
 			</li>
 			
 			
-			<li class="nav-item">
-        <a class="nav-link" href="news.html">News</a>
+			<li class="nav-item active">
+        <a class="nav-link" href="news.html">News <span class="sr-only">(current)</a>
       </li>
 	  
      </ul>
@@ -534,9 +555,7 @@ font-weight: bold;
               <p>
                 <a href="contact.html">Contact Us</a>
               </p>
-              <p>
-                <a href="faq.html">FAQ</a>
-              </p>
+            
               <p>
                 <a href="help.html">Help</a>
               </p>
