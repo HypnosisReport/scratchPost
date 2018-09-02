@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resources</title>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- JavaScripts -->
+		<script src="js/jquery-3.3.1.js"></script> 
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/functionality.js"></script>
+  
+    <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:700" rel="stylesheet">
+  
+  
+  <style>
+  
+
+
+/* Base */
+  .Featured, h1, {
+  Font-Family: 'Roboto', Sans-Serif;
+  font-weight: 700;
+text-transform: uppercase;}
+  
+p, label {
+  
+	font-family: "Molengo", sans-serif;
+  
+}
+/* Navigation bar */
+
+.navbar {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+
+.navigation__list {
+	
+	margin: auto;
+	padding: 0;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-link {
+	position: relative;
+	display: block;
+	padding: 1em;
+	margin-left: 2.4em;
+	font-family: 'Roboto';
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase
+}
+
+.nav-link:after {	
+	content: "";
+	position: relative;
+	color: #31708f;
+	bottom: -2px;
+	display: block;
+	width: 100%;
+	height: 1.5px;
+	background-color: black;
+	opacity: 0;
+	transition: all 0.5s ease-in;
+}
+
+.nav-link:hover:after {	
+	opacity: 1;
+}
+
+
+.nav-link:active {	
+	font-weight: 800;
+}
+
+#logo-navbar-middle {
+	padding-left: 1.6em;
+	}
+
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Page Title */
+
+#topHeader {
+    font-size: 2em;
+    word-break: break-all;
+}
+ 
+/* Horizontal rule */
+
+	hr {
+	
+      width:80%;
+   }
+
+
+/* Resource Grid */
+
+  * {
+    box-sizing: border-box;
+} 
+
+.row {
+    margin: 8px -16px;
+}
+
+#resourceGrid {
+	font-family: "Molengo", sans-serif;
+	color: black;
+  padding: 3em;
+  width: 80%;
+	}
+
+/* Column Padding */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.topic-title {
+    
+  padding-top:1em;
+}
+.topic-title a {
+  Font-Family: 'Roboto', Sans-Serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding-top: .5em;
+  color:#008080;
+}
+
+.topic-title a:hover {
+  font-weight: 700;
+  text-decoration: none;
+  padding-top: .5em;
+  color:#ff9800;
+}
+
+/* 3 Columns */
+.column {
+    float: left;
+    width: 50%;
+    display: none; /* Hide columns by default */
+}
+
+/* Clear Floats */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+
+.content {
+    background-color: white;
+   
+    text-align: center;
+   
+}
+
+
+.topic-img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*  Show class added to filtered elements */
+.show {
+    display: block;
+}
+
+/* Resource grid buttons */
+.gridBtn {
+  cursor: pointer;
+  background-color: #ff9800;
+  color:white;
+}
+
+.gridBtn:hover {
+  background-color: #008080;;
+
+}
+
+.gridBtn:active {
+  background-color: #008080;;
+
+}
+
+#myBtnContainer {
+padding-top: .5em;
+margin:auto;
+
+}
+
+  /* Pagination */
+
+	.pagination {
+	  margin-bottom: 1em;
+	  margin-top:0.5em;
+	}
+
+/* Footer */
+	
+
+.page-footer {
+  background-color: #008080;
+  margin-top: 3em;
+}
+
+.page-footer, .page-footer a {
+  color: white;
+}
+
+.page-footer a:hover {
+  color:#ff9800;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h6 { 
+  font-weight: bold;
+  text-transform: uppercase;
+  color:white;
+}
+
+.fa {
+  color: white;
+}
+
+#footerHR {
+
+  height:3px;
+  border-color:#ffffff;
+  width: 100%;
+}
+  
+/*Welcome column*/
+
+#welcomeMsg {
+text-align: center;
+}
+
+i:hover {
+ font-weight: bolder;
+ color:#ff9800;
+}
+
+.footHR {
+  text-align: left;
+  color: white;
+}
+.nlSend {
+  background-color: #ff9800;
+  font-weight: 500;
+  color: white;
+}
+
+
+/* Modal */
+
+.close {
+  color: black;
+}
+
+.nlSend:hover {
+  background-color: #008080;
+  color: white;
+}
+
+.modal-header {
+  
+  background-color:#ff9800;
+}
+
+.modal-title {
+  color: white;
+  font-family: 'Roboto';
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase
+  
+}
+
+#subFields {
+color:#ff9800;
+font-weight: bold;
+}
+
+#subscribeBtn {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+#subscribeBtn:hover {
+  background-color: #ff9800;
+  color: white;
+  font-weight: 600;
+}
+  </style>
+</head>
+
+<body>
+
+       <!-- Navigation bar --> 
+<nav class="navbar navbar-expand-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   
+  <div class="collapse navbar-collapse" id="navDropdown">
+    <ul class="navigation__list navbar-nav mr-auto mt-2 mt-md-0 text-info">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Get Started
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="terms.html">A-Z Glossary</a>
+          <a class="dropdown-item" href="basics.html">The Basics</a>
+			</li>
+	  <li><a href="index.html"><img id="logo-navbar-middle" src="images/logo.png" width="206" alt="Scratch Post logo"></a></li>
+	   <li class="nav-item">
+      
+	    <li class="nav-item active">
+        <a class="nav-link" href="resources.html">Resources <span class="sr-only">(current)</a>
+			</li>
+			
+			
+			<li class="nav-item">
+        <a class="nav-link" href="news.html">News</a>
+      </li>
+	  
+     </ul>
+      </div>
+      <hr>
+</nav>
+
+
+
+<h1 class="mt-2 text-info" id="topHeader" style="text-align: center;">Resources</h1>
+
+<!-- Filter menu -->
+<div class="container-fluid" id="myBtnContainer" style="text-align: center";>
+
+    <div class="btn-group btn-group-lg">
+        <button class="btn gridBtn active" onclick="filterSelection('all')">Show all</button>
+        
+    <button class="btn gridBtn" onclick="filterSelection('english')"> English</button>
+    
+    <button class="btn gridBtn" onclick="filterSelection('geography')">Geography</button>
+    
+    <button class="btn gridBtn" onclick="filterSelection('history')">History</button>
+
+      <button class="btn gridBtn" onclick="filterSelection('ict')">ICT</button>
+
+    <button class="btn gridBtn" onclick="filterSelection('maths')">Maths</button>
+
+
+    <button class="btn gridBtn" onclick="filterSelection('science')">Science</button>
+
+
+    <button class="btn gridBtn" onclick="filterSelection('other')">Other</button>
+    </div>
+  </div>
+  
+  
+  <!-- Resource Grid --> 
+
+  <!-- Row 1 -->
+  <div class="container" id="resourceGrid">
+    <div class="row">
+            <div class="column col-12 col-sm-12 col-md-4 col-xl-4 geography">
+        <div class="content">
+            <img class="topic-img" src="images\resources\geography\travelHeader.jpg" alt="Travel The World geography resource" style="width:100%">
+            <h5 class="topic-title"><a href="#">Travel The World</a></h4>
+            <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+          </div>
+</div>
+
+<div class="column col-12 col-sm-12 col-md-4 col-xl-4 english">
+        <div class="content">
+            <img class="topic-img" src="images\resources\english\scaryHeader.jpg" alt="Tell a scary story English resource" style="width:100%">
+            <h5 class="topic-title"><a href="#">Tell A Scary Story</a></h4>
+            <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+          </div>
+    </div>
+
+    <div class="column col-12 col-sm-12 col-md-4 col-xl-4 english">
+            <div class="content">
+                <img class="topic-img" src="images\resources\english\verbsHeader.jpg" alt="Rock and Roll music resource" style="width:100%">
+                <h5 class="topic-title"><a href="#">Rock And Roll!</a></h4>
+                <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+              </div>
+        </div>
+
+  
+
+  <!-- Row 2 -->
+        <div class="column col-12 col-sm-12 col-md-4 col-xl-4 maths">
+    <div class="content">
+        <img class="topic-img" src="images\resources\maths\subtractionHeader.jpg" alt="Subtraction maths resource" style="width:100%">
+        <h5 class="topic-title"><a href="#">Super Simple Subtraction</a></h4>
+        <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+      </div>
+</div>
+
+<div class="column col-12 col-sm-12 col-md-4 col-xl-4 other">
+        <div class="content">
+            <img class="topic-img" src="images\resources\other\easterHeader.jpg" alt="Easter other resource" style="width:100%">
+            <h5 class="topic-title"><a href="#">Celebrate: Easter!</a></h4>
+            <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+          </div>
+    </div>
+
+<div class="column col-12 col-sm-12 col-md-4 col-xl-4 science">
+    <div class="content">
+        <img class="topic-img" src="images\resources\science\moonHeader.jpg" alt="Moon Science resource" style="width:100%">
+        <h5 class="topic-title"><a href="#">Time To Moon Walk</a></h4>
+        <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+      </div>
+</div>
+
+ 
+
+ <!-- Row 3 -->
+       
+ <div class="column col-12 col-sm-12 col-md-4 col-xl-4 science">
+        <div class="content">
+            <img class="topic-img" src="images\resources\science\noctunalHeader.jpg" alt="Nocturnal animals science resource" style="width:100%">
+            <h5 class="topic-title"><a href="res_storytelling.html">Nocturnal Animals</a></h4>
+            <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+          </div>
+    
+</div>
+      
+
+      <div class="column col-12 col-sm-12 col-md-4 col-xl-4 ict">
+          <div class="content">
+              <img class="topic-img" src="images\resources\ict\tipsHeader.jpg" alt="Scratch tips resource" style="width:100%">
+              <h5 class="topic-title"><a href="#">3 Super Scratch Tips</a></h4>
+              <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+            </div>
+      </div>
+      <div class="column col-12 col-sm-12 col-md-4 col-xl-4 history">
+          <div class="content">
+              <img class="topic-img" src="images\resources\english\piratesHeader.jpg" alt="Pirate story history resource" style="width:100%">
+              <h5 class="topic-title"><a href="#">A Pirate Story</a></h4>
+              <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+            </div>
+      </div>
+          </div>
+       
+        </div>       
+  
+     <!-- Pagination -->
+      <ul class="pagination pagination-md justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="resources.html">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="resources2.html">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="resources3.html">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+      
+   <!-- Footer -->
+ <footer class="page-footer font-small pt-4">
+    
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+    
+          <!-- Footer links -->
+          <div class="row text-center text-md-left mt-3 pb-3">
+    
+            <!-- Welcome  Message column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" style="font-size:large;">
+              
+              <p id="welcomeMsg">Get your tech terminology up to <i>scratch</i>, download hundreds 
+                of fun KS2 resources and keep abreast of ICT news! <p>
+  
+                        <!-- Subscribe Modal -->
+  
+                        <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                      <h4 class="modal-title w-100">Get free Scratch lesson plans</h4>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body mx-3">
+                                      <div class="md-form mb-5">
+                                          <i class="fa fa-user prefix grey-text"></i>
+                                          
+                                          <label data-error="wrong" id="subFields" data-success="right">First Name</label>
+                                          <input type="text" class="form-control validate" placeholder="e.g Jade Smith">
+                                      </div>
+  
+                                      <div class="md-form mb-4">
+                                          <i class="fa fa-envelope prefix grey-text"></i>
+                                          <label data-error="wrong" id="subFields" data-success="right">Email Address</label>
+                                          <input type="email" class="form-control validate" placeholder="e.g jade.smith@mail.com">
+                                      </div>
+  
+                                      
+                                      <input type="checkbox" style="margin-right:1em;"><label style="color:grey;font-size:small;"> I agree to the Terms &amp; Conditions</label>
+  
+                                  </div>
+                                  <div class="modal-footer d-flex justify-content-center">
+                                      <button class="btn btn-lg nlSend">Subscribe<i class="fa fa-paper-plane-o ml-1"></i></button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="text-center">
+                        
+                          <a href="" class="btn btn-default btn-lg btn-rounded mb-4" id="subscribeBtn" 
+                          data-toggle="modal" data-target="#modalSubscriptionForm">Subscribe</a>
+                          
+                          <p style="font-size: small;">New Scratch lessons to your inbox weekly!</p>
+                      </div>
+            </div>
+  
+            <!-- Grid column -->
+    
+            <hr class="w-100 clearfix d-md-none">
+    
+            <!-- Nav links column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class=" mb-4">Navigation</h6>
+        
+              <p>
+                <a href="index.html">Home</a>
+              </p>
+              <p>
+                <a href="terms.html">A-Z Glossary</a>
+              </p>
+              <p>
+                <a href="basics.html">Basics</a>
+              </p>
+              <p>
+                <a href="resources.html">Resources</a>
+              </p>
+              <p>
+                <a href="news.html">News</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="w-100 clearfix d-md-none">
+    
+            <!-- Useful links column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class=" mb-4 ">Useful Links</h6>
+           
+              <p>
+                <a href="contact.html">Contact Us</a>
+              </p>
+              <p>
+                <a href="help.html">Help</a>
+              </p>
+          
+            </div>
+    
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+    
+          </div>
+          <!-- Footer links -->
+    
+          <hr id="footerHR">
+    
+          <!-- Grid row -->
+          <div class="row d-flex align-items-center">
+    
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+    
+              <!--Copyright-->
+              <p class="text-center text-md-left"><small>© 2018 Copyright
+                <a href="#">
+                  <i>Scratch Post</i></small>
+                </a>
+              </p>
+    
+            </div>
+    
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+    
+              <!-- Social buttons -->
+              <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://twitter.com/The_ScratchPost">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fa fa-google-plus"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fa fa-pinterest"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </footer>
+    <!-- Footer -->
+
+
+    
+    <script>
+     filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
+</body>
+</html>
