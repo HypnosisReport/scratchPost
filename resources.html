@@ -131,6 +131,7 @@ p, label {
 	font-family: "Molengo", sans-serif;
 	color: black;
   padding: 3em;
+  width: 80%;
 	}
 
 /* Column Padding */
@@ -140,17 +141,28 @@ p, label {
 }
 
 .topic-title {
+    
+  padding-top:1em;
+}
+.topic-title a {
   Font-Family: 'Roboto', Sans-Serif;
   font-weight: 700;
   text-decoration: none;
   padding-top: .5em;
-  
+  color:#008080;
+}
+
+.topic-title a:hover {
+  font-weight: 700;
+  text-decoration: none;
+  padding-top: .5em;
+  color:#ff9800;
 }
 
 /* 3 Columns */
 .column {
     float: left;
-    width: 25%;
+    width: 50%;
     display: none; /* Hide columns by default */
 }
 
@@ -188,6 +200,11 @@ p, label {
 }
 
 .gridBtn:hover {
+  background-color: #008080;;
+
+}
+
+.gridBtn:active {
   background-color: #008080;;
 
 }
@@ -376,107 +393,97 @@ font-weight: bold;
   
   
   <!-- Resource Grid --> 
-  <div class="row" id="resourceGrid">
-      <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 history">
-          <div class="content">
-            <img class="topic-img" src="images\resources\maths\dateHeader.jpg" alt="Scratch 101 resource" style="width:100%">
+
+  <!-- Row 1 -->
+  <div class="container" id="resourceGrid">
+    <div class="row">
+
+            <div class="column col-12 col-sm-12 col-md-4 col-xl-4 ict">
+                    <div class="content">
+                        <img class="topic-img" src="images\resources\ict\spriteHeader.jpg" alt="Create A Sprite ICT resource" style="width:100%">
+                        <h5 class="topic-title"><a href="#">Create A Sprite</a></h4>
+                        <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+                      </div>
+                </div>
+
+            <div class="column col-12 col-sm-12 col-md-4 col-xl-4 history">
+        <div class="content">
+            <img class="topic-img" src="images\resources\history\dateHeader.jpg" alt="Scratch 101 resource" style="width:100%">
             <h5 class="topic-title"><a href="#">Independence Day</a></h4>
             <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
           </div>
-        </div>
-      
-    
-        <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 geography">
-          <div class="content">
-            <img class="topic-img" src="images\resources\geography\mexicoHeader.jpg" alt="Mexico resource" style="width:100%">
+</div>
+
+<div class="column col-12 col-sm-12 col-md-4 col-xl-4 geography">
+        <div class="content">
+            <img class="topic-img" src="images\resources\geography\summerHeader.jpg" alt="Summer Geography resource" style="width:100%">
+            <h5 class="topic-title"><a href="#">Seasons: It's Summer!</a></h4>
+            <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+          </div>
+    </div>
+
+<div class="column col-12 col-sm-12 col-md-4 col-xl-4 geography">
+        <div class="content">
+            <img class="topic-img" src="images\resources\geography\mexicoHeader.jpg" alt="Mexico geography resource" style="width:100%">
             <h5 class="topic-title"><a href="#">Let's Visit: Mexico!</a></h4>
             <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
           </div>
-        </div>
+    </div>
 
+    <div class="column col-12 col-sm-12 col-md-4 col-xl-4 english">
+        <div class="content">
+            <img class="topic-img" src="images\resources\english\storyHeader.jpg" alt="Storytelling English resource" style="width:100%">
+            <h5 class="topic-title"><a href="res_storytelling.html">Storytelling With Scratch</a></h4>
+            <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+          </div>
+    
+</div>
+      
 
-          <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 other">
-              <div class="content">
-                <img class="topic-img" src="images\resources\music\rockHeader.jpg" alt="Rock and roll music resource" style="width:100%">
-                <h5 class="topic-title"><a href="#">Rock and Roll!</a></h4>
+  <!-- Row 2 -->
+    
+
+<div class="column col-12 col-sm-12 col-md-4 col-xl-4 science">
+    <div class="content">
+        <img class="topic-img" src="images\resources\science\snowHeader.jpg" alt="Snow And Ice Science resource" style="width:100%">
+        <h5 class="topic-title"><a href="#">Snow And Ice</a></h4>
+        <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+      </div>
+</div>
+
+ 
+
+ <!-- Row 3 -->
+
+ 
+
+        <div class="column col-12 col-sm-12 col-md-4 col-xl-4 other">
+          <div class="content">
+              <img class="topic-img" src="images\resources\music\rockHeader.jpg" alt="Rock and Roll music resource" style="width:100%">
+              <h5 class="topic-title"><a href="#">Rock And Roll!</a></h4>
+              <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+            </div>
+      </div>
+
+      <div class="column col-12 col-sm-12 col-md-4 col-xl-4 geography">
+            <div class="content">
+                <img class="topic-img" src="images\resources\geography\jungleHeader.jpg" alt="Jungle geography resource" style="width:100%">
+                <h5 class="topic-title"><a href="#">Welcome To The Jungle</a></h4>
                 <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
               </div>
-            </div>
-
-            <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 geography">
-                <div class="content">
-                  <img class="topic-img" src="images\resources\geography\springHeader.jpg" alt="Spring resource" style="width:100%">
-                  <h5 class="topic-title"><a href="#">Seasons: It's Spring!</a></h4>
-                  <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
-                </div>
-              </div>
-
-        <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 english">
+        </div>
+        
+      <div class="column col-12 col-sm-12 col-md-4 col-xl-4 maths">
           <div class="content">
-            <img class="topic-img" src="images\resources\english\storyHeader.jpg" alt="Storytelling resource" style="width:100%" href="storytelling.html">
-            <h5 class="topic-title"><a href="storytelling.html">Storytelling With Scratch</a></h4>
-            <p class="topic-desc" href="storytelling.html">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+              <img class="topic-img" src="images\resources\maths\countingHeader.jpg" alt="Money And Counting Maths resource" style="width:100%">
+              <h5 class="topic-title"><a href="#">Money And Counting</a></h4>
+              <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
+            </div>
+      </div>
           </div>
-        </div>
-    <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 geography">
-      <div class="content">
-        <img class="topic-img" src="images\resources\geography/summerHeader.jpg" alt="Summer resource" style="width:100%">
-        <h5 class="topic-title"><a href="#">Seasons: It's Summer!</a></h4>
-        <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
-      </div>
-    </div>
+       
+        </div>       
   
-    <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 ict">
-      <div class="content">
-        <img class="topic-img" src="images\resources\ict\petsHeader.jpg" alt="People" style="width:100%">
-        <h5 class="topic-title"><a href="#">Play With Virtual Pets</a></h4>
-        <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
-      </div>
-    </div>
-
-    <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 geography">
-      <div class="content">
-        <img class="topic-img" src="images\resources\geography\jungleHeader.jpg" alt="Jungle geography resource" style="width:100%">
-        <h5 class="topic-title"><a href="#">Welcome To The Jungle</a></h4>
-        <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
-      </div>
-    </div>
-  
-  
-    <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 maths">
-      <div class="content">
-        <img class="topic-img" src="images\resources\maths\countingHeader.jpg" alt="Car" style="width:100%">
-        <h5 class="topic-title"><a href="#">Money And Counting</a></h4>
-        <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
-      </div>
-    </div>
-
-    
-    <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 english">
-        <div class="content">
-          <img class="topic-img" src="images\resources\english\scaryHeader.jpg" alt="Nature" style="width:100%">
-          <h5 class="topic-title"><a href="#">Tell A Scary Story</a></h4>
-          <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
-        </div>
-      </div>
-  
-    <div class="column col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12 science">
-      <div class="content">
-         <img class="topic-img" src="images\resources\science\snowHeader.jpg" alt="Science resource" style="width:100%">
-        <h4 class="topic-title"><a href="resPost1.html">Snow And Ice</a></h4>
-        <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
-      </div>
-    </div>
-  
-    <div class="column col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 geography">
-      <div class="content">
-        <img class="topic-img" src="images\resources\geography\travelHeader.jpg" alt="Car" style="width:100%">
-        <h5 class="topic-title"><a href="#">Travel The World</a></h4>
-        <p class="topic-desc">Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
-      </div>
-    </div>
-</div>
-   
      <!-- Pagination -->
       <ul class="pagination pagination-md justify-content-center">
         <li class="page-item">
@@ -596,9 +603,6 @@ font-weight: bold;
            
               <p>
                 <a href="contact.html">Contact Us</a>
-              </p>
-              <p>
-                <a href="faq.html">FAQ</a>
               </p>
               <p>
                 <a href="help.html">Help</a>
