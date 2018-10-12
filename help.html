@@ -22,7 +22,7 @@
   font-weight: 700;
 text-transform: uppercase;}
   
-p, label, #accordion {
+p, label, .accordion {
   
 	font-family: "Molengo", sans-serif;
   
@@ -119,6 +119,9 @@ p, label, #accordion {
 
     }
 
+    .buttonBar:active {
+      color:#ff9800;
+    }
     .QnA {
         text-align:center;
     }
@@ -152,7 +155,56 @@ p, label, #accordion {
         font-size: 600%;
     }
 
+
+/* Form */
+
+   .formArea {
+        text-align: left;
+        padding: 1em;
+        margin-bottom: 3em;
+        padding-bottom:2em;
+            
+    }
+        .subBtn {
+            background-color: #ff9800;
+            margin-top:.5em;
+            color: white;
+            font-weight: 600;
+        }
+    
+        .subBtn:hover {
+          
+      font-weight: 600;
+      background-color: #008080;
+        color: white;
+        }
+    
+        label {
+            color: #ff9800;
+            font-weight: 600;
+        }
+    
+        .formDesc {
+            text-align: center;
+            font-style:italic;
+    
+        }
    /* Help Area */
+
+   .thumbnail img {
+    border:solid black 2px;
+   }
+
+    .thumbnail2 img{
+    border:solid black 2px;
+    
+    padding-top:1em;
+   }
+   
+   
+   .caption {
+     padding-top:1em;
+   }
 
    .section-display:not(.active) {
   display: none;
@@ -165,13 +217,22 @@ p, label, #accordion {
     text-align: center;
 }
 
+.content-title {
+  padding-bottom:1em;
+}
+
 
 /* Accordion */
 
 #accordion {
     background-color: white;
+    
 }
 
+.accordion h5 {
+  color: #ff9800;
+  font-weight: 600;
+}
 
 #headingOne {
     color:#008080;
@@ -328,9 +389,8 @@ font-weight: bold;
     <div class="row">
             
        <div class="buttonBar">
-            <a class="btn btn-primary btn-lg catBtn section-link" onclick="showInfo()" href='#' role="button"><i class="fa fa-user"  style="font-size:3em;"></i><br>Account</a>
+            <a class="btn btn-primary btn-lg catBtn section-link" onclick="showInfo()" href='#' role="button"><i class="fa fa-envelope"  style="font-size:3em;"></i><br>Contact</a>
             <a class="btn btn-primary btn-lg catBtn section-link" onclick="showInfo()" href='#' role="button"><i class="fa fa-clone" style="font-size:3em;"></i><br>Resources</a>
-            <a class="btn btn-primary btn-lg catBtn section-link" onclick="showInfo()" href='#' role="button"><i class="fa fa-cog" style="font-size:3em;"></i><br>Technical</a>
             <a class="btn btn-primary btn-lg catBtn section-link" onclick="showInfo()" href='#' role="button"><i class="fa fa-ellipsis-h" style="font-size:3em;"></i><br>Other</a>
         </div>
         
@@ -343,54 +403,46 @@ font-weight: bold;
 <div class="helpAreas d-flex justify-content-center">
 
 
-        <!-- Account -->
+        <!-- Contact -->
 
         <div class="section-display col-md-9">
-                <h2 class="content-title align-middle">Account</h2>
+                <h2 class="content-title align-middle">Contact Us</h2>
                 <div id="accordion">
-                        <div class="card">
-                          <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Can I use these lesson resources in my classroom?
-                              </button>
-                            </h5>
-                          </div>
+                    <div class="container col-lg-10 formArea">
+
+
+                        <p class="formDesc">Got something to say? Tell us here!</p>
+                        <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  <small id="emailHelp" class="form-text text-muted">We will send our reply here</small>
+                                </div>
+                               
+                                <div class="form-group">
+                                  <label for="selectOption">What would you like to do?</label>
+                                  <select class="form-control" id="selectOption">
+                                    <option>Submit learning resource</option>
+                                    <option>Ask question or make correction</option>
+                                    <option>Report technical issue</option>
+                                    <option>Enquire about a job</option>
+                                    <option>Other</option>
+                                  </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                  <label for="messageArea">Message</label>
+                                  <textarea class="form-control" id="messageArea" rows="4" minlength="50" placeholder="Please be as detailed as possible..."></textarea>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputFile">File upload</label>
+                                  <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                                  <small id="fileHelp" class="form-text text-muted">Upload your resource, CV or screenshot here.</small>
+                                </div>
                       
-                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                    Yes, of course! That's what they're for.
+                                <a href="sent.html" class="btn subBtn btn-lg" role="button">Submit<i class="fa fa-paper-plane-o ml-1"></i></a>
+                              </form>
                             </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How do I download the resources?
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                    Navigate to the resource you would like to download and then click the 'Download' button. 
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Collapsible Group Item #3
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
 
@@ -425,21 +477,63 @@ font-weight: bold;
                                       </div>
                                       <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion2">
                                         <div class="card-body">
-                                                Navigate to the resource you would like to download and then click the 'Download' button. 
-                                        </div>
+
+                                        
+                                                <div class="col-md-10">
+                                                    <div class="thumbnail">
+                                                        <img src="images/downloadtutorial1.jpg" alt="Click download button" style="width:100%">
+                                                        <div class="caption">
+                                                          <p>1. Navigate to the resource you would like to download and then click the 'Download' button. </p>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+                                                  </div>
+                                        
+                                                  <div class="col-md-10">
+                                                      <div class="thumbnail2">
+                                                          <img src="images/downloadtutorial2.jpg" alt="Choose Save" style="width:100%">
+                                                          <div class="caption">
+                                                            <p>2. Choose where you want to save the resource and click Save.</p>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+                                                    </div>
+                                        
+                                        
+                                              </div>
                                       </div>
                                     </div>
                                     <div class="card">
                                       <div class="card-header" id="headingSix">
                                         <h5 class="mb-0">
                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                                            Collapsible Group Item #3
+                                            How do I unzip the resource?
                                           </button>
                                         </h5>
                                       </div>
                                       <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion2">
                                         <div class="card-body">
-                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        
+                                            <div class="col-md-10">
+                                                <div class="thumbnail2">
+                                                    <img src="images/unzip1.jpg" alt="Choose Save" style="width:100%">
+                                                    <div class="caption">
+                                                      <p>1. Right-click on the .rar file and choose to extract the files.</p>
+                                                    </div>
+                                                  </a>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-md-10">
+                                                  <div class="thumbnail2">
+                                                      <img src="images/unzip2.jpg" alt="Choose Save" style="width:100%">
+                                                      <div class="caption">
+                                                        <p>2. Voilà! Your Scratch resource is ready to use.</p>
+                                                      </div>
+                                                    </a>
+                                                  </div>
+                                                </div>
+
                                         </div>
                                       </div>
                                     </div>
@@ -447,58 +541,7 @@ font-weight: bold;
                                 </div>
 
                                 
-        <!-- Technical -->
-
-                                <div class="section-display col-md-9">
-                                        <h2 class="content-title">Technical</h2>
-                                        <div id="accordion3">
-                                                <div class="card">
-                                                  <div class="card-header" id="headingSeven">
-                                                    <h5 class="mb-0">
-                                                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseOne">
-                                                            How do I ow
-                                                      </button>
-                                                    </h5>
-                                                  </div>
-                                              
-                                                  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion3">
-                                                    <div class="card-body">
-                                                            Yes, of course! That's what they're for.
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="card">
-                                                  <div class="card-header" id="headingEight">
-                                                    <h5 class="mb-0">
-                                                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
-                                                            How do I download the resources?
-                                                      </button>
-                                                    </h5>
-                                                  </div>
-                                                  <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion3">
-                                                    <div class="card-body">
-                                                            Navigate to the resource you would like to download and then click the 'Download' button. 
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="card">
-                                                  <div class="card-header" id="headingNine">
-                                                    <h5 class="mb-0">
-                                                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
-                                                        Collapsible Group Item #3
-                                                      </button>
-                                                    </h5>
-                                                  </div>
-                                                  <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion3">
-                                                    <div class="card-body">
-                                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-
-
+        
                                             
         <!-- Other -->
 
@@ -516,7 +559,7 @@ font-weight: bold;
                                                           
                                                               <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion4">
                                                                 <div class="card-body">
-                                                                        Scratch Post is a learning resource website focused on KS2 Scratch coding.
+                                                                        Scratch Post is a learning resource website focused on KS2 Scratch programming. It was created by Juliette Curran for her MSc Computing final project.
                                                                 </div>
                                                               </div>
                                                             </div>
@@ -524,30 +567,17 @@ font-weight: bold;
                                                               <div class="card-header" id="headingEleven">
                                                                 <h5 class="mb-0">
                                                                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseTwo">
-                                                                        How do I download the resources?
+                                                                        Can I submit my own Scratch resources?
                                                                   </button>
                                                                 </h5>
                                                               </div>
                                                               <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion4">
                                                                 <div class="card-body">
-                                                                        Navigate to the resource you would like to download and then click the 'Download' button. 
+                                                                        Of course! Zip your resource folder and upload it to our contact form. Make sure you choose the 'submit learning resource' option.
                                                                 </div>
                                                               </div>
                                                             </div>
-                                                            <div class="card">
-                                                              <div class="card-header" id="headingTwelve">
-                                                                <h5 class="mb-0">
-                                                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseThree">
-                                                                    Collapsible Group Item #3
-                                                                  </button>
-                                                                </h5>
-                                                              </div>
-                                                              <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion4">
-                                                                <div class="card-body">
-                                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                                </div>
-                                                              </div>
-                                                            </div>
+                                                          
                                                           </div>
                                                         </div>
                         
@@ -729,10 +759,4 @@ font-weight: bold;
 </body>
 </html>
 
-<!-- Licenses to credit later 
-
-
-Logo font: https://www.dafont.com/master-of-comics.font?text=Scratch+Post&psize=l&back=theme
-
--->
 
