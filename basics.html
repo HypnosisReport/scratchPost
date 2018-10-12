@@ -119,6 +119,10 @@ p, label {
     color:#ff9800;
 }
 
+
+iframe {
+  border:solid black 2px;
+}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -146,13 +150,42 @@ tr:nth-child(even) {
     .basicsArea {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 20px 15px 0 rgba(0, 0, 0, 0.19);
         padding: 2em;  
+        
+    overflow: auto;
+
+       
     }
 
-    .basicsArea h3 {
+    .basicsArea h2 {
       color:#ff9800;
       padding-top: 0.7em;
+      padding-bottom: 0.7em;
     }
 
+       .basicsArea h2 {
+    
+      padding-top: 0.7em;
+      padding-bottom: 0.7em;
+    }
+    
+    .basicsArea h4 {
+    
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+  }
+
+.mainBlocks {
+  color: #ff9800;
+}
+
+.subBlocks {
+  
+  color:#008080;
+}
+
+    .basicsArea h5 {
+      color:#008080;
+    }
     .basicsArea h3:first-child {
       padding-top: 0em;
 }
@@ -332,7 +365,15 @@ font-weight: bold;
                     <li class="nav-item"><a href='#Good' class="nav-link">What is it good for?</a></li>
                     <li class="nav-item"><a href='#Curriculum' class="nav-link">Scratch and the Curriculum</a></li>
                     <li class="nav-item"><a href='#Started' class="nav-link">How do I get started?</a></li>
-                   
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#basics" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Scratch Components
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#main">Main Components</a>
+                        <a class="dropdown-item" href="#environment">Environment</a>
+                        <a class="dropdown-item" href="#blocks">Blocks</a>
+                          </li>
                                     
                 </ul>
                                     
@@ -345,76 +386,129 @@ font-weight: bold;
 <!--Sections-->
         <div class="container col-lg-10 basicsArea">
 
-                <h3 id="What">What is Scratch?</h3>
-                <p>Scratch is a programming language created by MIT intended to help teach children to code. With Scratch, you can
-                    create your own interactive stories, games, art and much more.
+                <h2 id="What">What is Scratch?</h2>
+                <p>Scratch is a programming language created by MIT to help children learn to code. 
+                  With Scratch, you can create your own interactive stories, games, art and much more.
+                  Primary schools across the UK 
                   </p>
                 <iframe src="https://player.vimeo.com/video/65583694" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 <p><a href="https://vimeo.com/65583694">Scratch Overview</a> from <a href="https://vimeo.com/scratchedteam">ScratchEd</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                   
       
-                  <h3 id="Good">What is it good for?</h3>
-                  <p>It's this and that and this and that and this and that Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.
-                    Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.
-                  </p>
+                  <h2 id="Good">What is it good for?</h2>
+                  <p>Scratch introduces childen to complex coding concepts in a simplified, fun way. For example,
+                      Scratch has equivalents to arrays, iteration, if-else statements as well as Boolean and Dynamic logic.</p>
+                     
+                    <p>Scratch also has the potential to foster children's interest in programming which may lead them to more advanced programming 
+                    languages and ultimately, potential careers.</p>
+                    
+                   <p>The colourful, drag-and-drop interface turns coding programs into a game that's accessible to all ages!
+                   </p>
       
-                  <h3 id="Curriculum">How does Scratch fit into the UK Curriculum?</h3>
-                  <p>It's this and that and this and that and this and that Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.</p>
-               
+                  <h2 id="Curriculum">How does Scratch fit into the UK Curriculum?</h2>
+                  <p>Scratch provides all the tools needed to cover the programming requirements of the ICT curriculum.</p>
+                         
                   <table style="width:100%">
                     <tr>
                       <th>Curriculum</th>
+                      
                       <th>Scratch</th> 
                     </tr>
                   
                     <tr>
                       <td>Design, write and debug programs that accomplish specific goals, including controlling or simulating physical systems; solve problems by decomposing them into smaller parts</td>
-                      <td>Scratch blah blah and then blah and Scratch</td>
+                      <td>As Scratch is a block-based program, it is by it's very nature comprised of smaller parts which can come together to create a successful program.</td>
                     </tr>
                   
                     <tr>
                       <td>Use sequence, selection, and repetition in programs; work with variables and various
                   forms of input and output</td>
-                      <td>Scratch blah blah and then blah and Scratch</td>
+                      <td>With Scratch you can create a sequence of statements, include multiple variables, input and output and design your program to repeat steps or the entire process.</td>
                     </tr>
                   
                     <tr>
                       <td>Use logical reasoning to explain how some simple algorithms work and to detect and correct errors in algorithms and programs</td>
-                      <td>Scratch blah blah and then blah and Scratch</td>
+                      <td>Scratch can help pupils hone their logical reasoning skills and use them to create algorithms which will refine their programs.</td>
                     </tr>
                   
                   <tr>
                       <td>Understand computer networks including the internet; how they can provide multiple services, such as the world wide web; and the opportunities they offer for communication and collaboration</td>
-                      <td>Scratch blah blah and then blah and Scratch</td>
+                      <td>Scratch has the potential to broaden pupil’s understanding of what computers are capable of and increase their awareness of the collaborative aspects inherent in programming and the internet. Pupils can
+                        create, collaborate on or share their programs using the Scratch website.</td>
+                      
                     </tr>
                   
-                  <tr>
-                      <td>Use search technologies effectively, appreciate how results are selected and ranked, and be discerning in evaluating digital content</td>
-                      <td>Scratch blah blah and then blah and Scratch</td>
-                    </tr>
                   
-                  <tr>
-                      <td>Select, use and combine a variety of software (including internet services) on a range of
-                  digital devices to design and create a range of programs, systems and content that
-                  accomplish given goals, including collecting, analysing, evaluating and presenting data
-                  and information </td>
-                      <td>Scratch blah blah and then blah and Scratch</td>
-                    </tr>
-                  
-                  <tr>
-                      <td>Use technology safely, respectfully and responsibly; recognise acceptable/unacceptable behaviour; identify a range of ways to report concerns about
-                  content and contact.</td>
-                    <td>Scratch blah blah and then blah and Scratch</td>
-                    </tr>
-                  
+                 
                   </table>
 
+                  <h2 id="Started">How do I get started?</h2>
+                    <p>Getting started with Scratch is as simple as making a free account on the official website. There are a selection of <a href="https://scratch.mit.edu/starter_projects/" style="color:#ff9800;
+                      font-weight: bold;">Starter Projects</a> for beginners along with handy resources like this <a href="https://download.scratch.mit.edu/ScratchReferenceGuide14.pdf" style="color:#ff9800;
+                        font-weight: bold;">Reference Guide</a> for explainations of the basics in further detail.
+                    </p>
+
+
+                  <h2 id="main">Scratch Components</h2>
                   
-                  <h3  id="Started">How do I get started?</h3>
-                  <p>It's this and that and this and that and this and that Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.
-                    Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.
-                  </p>
-          </div>
+
+                        <h4 id="main">Main Components</h4>
+                    <p><h5>Sprite</h5>Sprites are the objects that can perform actions in your project. You can choose from the in-built library which contains various characters and objects or upload your own. They're basically your characters and props!</p>
+                      <p><h5>Costume</h5>Costumes are the alternate appearances of your sprite. Draw your costume in Scratch's Paint Editor, upload images to use or simply click on the sprite's current costume and personalise the colours or stance as you wish.</p>
+                      <p><h5>Stage</h5>The stage is where the program or game you have created takes place.</p>
+                        <p><h5>Scripts</h5>A script is a stacked sequence of blocks that work together to determine how the sprites on the stage interact with each other</p>
+                         
+  
+
+                    <h4 id="environment">Environment</h4>
+                    
+                      <p><h5>Backdrop</h5>The backdrop is the background on your stage. The in-built library has a range of backdrops from basketball courts to bedrooms. If you can't find what you want, edit existing backdrops or upload your own!</p>
+                        <p><h5>Block Palette</h5>Colour-coded and separated into handy categories, all possible blocks available to you are found in the Block Palette</p>
+                          <p><h5>Script Area</h5>In order to create a sequence, you must drag blocks from the block palette and snap them together in the script area.</p>
+                          <img src="images/ScratchExplain.jpg" class="img-fluid">
+
+                    <h4 id="blocks">Types of Blocks</h4>
+
+                    <p><h5 style="color:#ff9800;">Stacks</h5>Stack blocks have notches which can snap together like a jigsaw.
+                    Some of these blocks have an area inside in which you can type numbers/words, choose menu items or even insert other blocks</p>
+
+
+                      <p><h5 style="color:#ff9800;">Hats</h5>Hat blocks, as the name suggests, have rounded tops and sit on top of stack blocks. They wait for events to occur such as a button press and triggers the following code.</p>
+                        
+                      <p><h5 style="color:#ff9800;">Reporters</h5>Reporter blocks fit inside other blocks. The ones with round ends contain numbers or text whereas the ones with pointed ends report a Boolean value (true of false).</p>
+
+
+                     
+<hr>
+<p style="font-weight:700;">Within these main types of blocks there are sub-categories which have various functions:</p>
+                   <p><h5 class="subBlocks">Motion</h5>Motion blocks are colour-coded medium-blue and are used to control a sprite's movement. With Motion blocks you can make your sprite do things like move, turn or bounce.</p>
+                    
+                   <p><h5 class="subBlocks">Looks</h5>Look blocks are colour-coded purple and used to control a sprite's appearance. There are Look blocks for changing a costume's colour or to a new one entirely.</p>
+
+                      <p><h5 class="subBlocks">Sound</h5>Sounds blocks are color-coded pink and used to control sound. Volume can be adjusted or instruments changed using Sound blocks.</p>
+                      
+                      <p><h5 class="subBlocks">Pen</h5>Pen blocks are colour-coded dark-green, and are used to control the pen aspect of Scratch. With these blocks you can change the colour or size of the Scratch pen etc.</p>
+                         
+                          <p><h5 class="subBlocks">Data</h5>Data blocks fall into two categories: variables (orange) and lists (dark red). Variables are used to hold values and strings and list blocks are used to manipulate lists.</p>
+                           
+                            <p><h5 class="subBlocks">Events</h5>Event blocks are colour-coded brown and used to sense events, which trigger scripts to run. They are essential as without Events blocks programs could only run maunally.</p>
+
+                              <p><h5 class="subBlocks">Control</h5>Control blocks are colour-coded gold and used to control scripts. Control blocks can make events repeat multiple times or for a certain duration.</p>
+
+                                <p><h5 class="subBlocks">Sensing</h5>Sensing blocks are colour-coded light blue and used to detect different factors of a project. For example, a Sensing block migh check to see if a key is pressed or certain colours are touching.</p> 
+
+                                  <p><h5 class="subBlocks">Operators</h5>Operators blocks are colour-coded light-green and used to script maths equations and string handling. Operators blocks could pick a random number between two digits or identify what the third letter of a word is etc.</p>
+
+                                    <p><h5 class="subBlocks">More Blocks</h5>More blocks are colour-coded purple and are user-created to hold custom procedures.</p>
+                 
+                                     
+                 
+                                     
+                     
+                             
+         
+         
+                            </div>
       
 
         <!-- Back To Top button -->
