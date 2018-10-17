@@ -107,8 +107,18 @@ p, label {
     word-break: break-all;
     padding-bottom: .6em;
 }
- 
  /* Widget sidebar */
+
+
+.list-unstyled a {
+color: black;
+}
+
+.list-unstyled a:hover {
+color: #ff9800;
+font-weight: 600;
+text-decoration: none;
+}
 
  .card-header {
    background-color:#008080;
@@ -120,9 +130,13 @@ p, label {
  }
 
  .btnSearch {
-   background-color:#ff9800;
+   background-color:black;
    color: white;
    padding-left: -0.6em;
+ }
+
+.btnSearch:hover {
+background-color:  #ff9800
  }
 
 /* Horizontal rule */
@@ -143,7 +157,23 @@ p, label {
 }
 
 .newsPost a {
+  color: black;
+}
+
+.newsPost a:hover {
   color: #ff9800;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tagType {
+  color:#008080;
+}
+
+.tagType:hover {
+  color:#ff9800;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 h2 {
@@ -156,6 +186,7 @@ h2 {
 	.pagination {
 	  margin-bottom: 1em;
 	  margin-top:0.5em;
+    color:#008080;
 	}
 
   /* Footer */
@@ -286,13 +317,13 @@ font-weight: bold;
 	  <li><a href="index.html"><img id="logo-navbar-middle" src="images/logo.png" width="206" alt="Scratch Post logo"></a></li>
 	   <li class="nav-item">
       
-	    <li class="nav-item active">
-        <a class="nav-link" href="resources.html">Resources <span class="sr-only">(current)</a>
+	    <li class="nav-item">
+        <a class="nav-link" href="resources.html">Resources</a>
 			</li>
 			
 			
-			<li class="nav-item">
-        <a class="nav-link" href="news.html">News</a>
+			<li class="nav-item active">
+        <a class="nav-link" href="news.html">News <span class="sr-only">(current)</a>
       </li>
 	  
      </ul>
@@ -315,32 +346,44 @@ font-weight: bold;
   
       <!-- News Post -->
       <div class="card mb-4 newsPost">
-        <a href="newsPost1.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
+        <a href="news_rising.html"><img class="card-img-top" src="images\newsImages\cropladyTeacher.jpg" alt="Female teacher writing on board"></a>
         <div class="card-body">
-          <h3 class="card-title"><a href="newsPost1.html">Rising number of GCSE students dropping ICT</a></h2>
+          <h3 class="card-title"><a href="news_rising.html">Rising number of GCSE students dropping ICT</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
         </div>
       </div>
+      
+        <!-- Tags -->
+              <p style="font-weight:bold;">Tagged: <a href="#" class="tagType">Research</a>, <a href="#" class="tagType">Pedagogy</a></p>
+              
 
 <hr>
    <!-- News Post -->
       <div class="card mb-4 newsPost">
-        <a href="newsPost2.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
+        <a href="news_women.html"><img class="card-img-top" src="images\newsImages\cropfamilyTablet.jpg" alt="Mother and children looking at tablet"></a>
         <div class="card-body">
-          <h3 class="card-title"><a href="newsPost2.html">How do we solve the women in STEM problem?</a></h2>
+          <h3 class="card-title"><a href="news_women.html">How do we solve the women in STEM problem?</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
         </div>
       </div>
 
+         <!-- Tags -->
+         <p style="font-weight:bold;">Tagged: <a href="#" class="tagType">Government</a>, <a href="#" class="tagType">Pedagogy</a></p>
+         
+
 <hr>
       <!-- News Post -->
       <div class="card mb-4 newsPost">
-        <a href="newsPost3.html"><img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"></a>
+        <a href="news_maths.html"><img class="card-img-top" src="images\newsImages\cropcloseCode.jpg" alt="Programming code"></a>
         <div class="card-body">
-          <h3 class="card-title"><a href="newsPost3.html">Studies show programming improves maths skills</a></h2>
+          <h3 class="card-title"><a href="news_maths.html">Studies show programming improves maths skills</a></h2>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
         </div>
       </div>
+
+         <!-- Tags -->
+         <p style="font-weight:bold;">Tagged: <a href="#" class="tagType">Edtech</a>, <a href="#" class="tagType">Scratch</a></p>
+         
 
     </div>
 
@@ -409,21 +452,21 @@ font-weight: bold;
 <!-- /.container -->
 
   <!-- Pagination -->
-  <ul class="pagination pagination-md justify-content-center">
-    <li class="page-item">
-      <a class="page-link" href="news.html" aria-label="Previous">
+  <ul class="pagination pagination-md justify-content-center" style="color:#ff9800;">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
         <span class="sr-only">Previous</span>
       </a>
     </li>
-    <li class="page-item">
+    <li class="page-item active">
       <a class="page-link" href="news.html">1</a>
     </li>
-    <li class="page-item active">
+    <li class="page-item">
       <a class="page-link" href="news2.html">2</a>
     </li>
-    <li class="page-item disabled">
-      <a class="page-link" href="#" aria-label="Next">
+    <li class="page-item">
+      <a class="page-link" href="news2.html" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
         <span class="sr-only">Next</span>
       </a>
@@ -530,9 +573,7 @@ font-weight: bold;
               <p>
                 <a href="contact.html">Contact Us</a>
               </p>
-              <p>
-                <a href="faq.html">FAQ</a>
-              </p>
+            
               <p>
                 <a href="help.html">Help</a>
               </p>
