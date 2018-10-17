@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Arts vs. STEM: Why not both?</title>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:700" rel="stylesheet">
+  
+  <style>
+  
+  .Featured, h1, .card-title {
+  Font-Family: 'Roboto', Sans-Serif;
+  font-weight: 700;
+  
+}
+
+  
+p, .commentSection p {
+  
+	font-family: "Molengo", sans-serif;
+  
+}
+
+  .Featured {
+    font-size: 1.5em;
+    word-break: break-all;
+}
+  
+#listTitle {
+  Font-Family: 'Roboto', Sans-Serif;
+  font-weight: 700;
+text-transform: uppercase;
+}
+
+/* Navigation bar */
+
+.navbar {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+
+.navigation__list {
+	
+	margin: auto;
+	padding: 0;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-link {
+	position: relative;
+	display: block;
+	padding: 1em;
+	margin-left: 2.4em;
+	font-family: 'Roboto';
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase
+}
+
+.nav-link:after {	
+	content: "";
+	position: relative;
+	color: #31708f;
+	bottom: -2px;
+	display: block;
+	width: 100%;
+	height: 1.5px;
+	background-color: black;
+	opacity: 0;
+	transition: all 0.5s ease-in;
+}
+
+.nav-link:hover:after {	
+	opacity: 1;
+}
+
+
+.nav-link:active {	
+	font-weight: 800;
+}
+
+#logo-navbar-middle {
+	padding-left: 1.6em;
+	}
+
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Page Title */
+
+#topHeader {
+    font-size: 2em;
+}
+ 
+ 
+
+/* Horizontal rule */
+
+	hr {
+	
+      width:80%;
+   }
+   
+   /* Resource main body */
+
+   #resPreview {
+     margin: auto;
+     padding: .8em;
+   }
+    .resContent {
+      width: 96%;
+    }
+
+/* Comments */
+
+.tagType {
+  color:#008080;
+}
+
+.tagType:hover {
+  color:#ff9800;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.commentSection {
+  width: 96%;
+}
+  
+.commentSection button {
+  background-color: black;
+  border-color: black;
+}
+
+.commentSection button:hover {
+  background-color: #ff9800;
+  border-color: #ff9800;
+}
+  
+ /* Resource sidebar */
+ 
+ .card-header {
+   background-color:#008080;
+   color: white;
+ }
+
+ .list-unstyled a {
+color: black;
+}
+
+.list-unstyled a:hover {
+color: #ff9800;
+font-weight: 600;
+text-decoration: none;
+}
+
+ .btnSearch {
+   background-color:black;
+   color: white;
+   padding-left: -0.6em;
+ }
+
+.btnSearch:hover {
+background-color:  #ff9800
+ }
+
+ .topic-img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: .2em;
+ }
+
+ .topic-title {
+  padding-top: .5em;
+ }
+
+  .dlBtn {
+      text-align: center;
+      margin-bottom: 1em;
+  }
+  .resSidebar {
+    text-align: center;
+    padding-left: 3em;
+  }
+
+  .downloadSection {
+    text-align: center;
+  }
+
+
+	
+ /* Footer */
+	
+
+ .page-footer {
+  background-color: #008080;
+  margin-top: 3em;
+}
+
+.page-footer, .page-footer a {
+  color: white;
+}
+
+.page-footer a:hover {
+  color:#ff9800;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h6 { 
+  font-weight: bold;
+  text-transform: uppercase;
+  color:white;
+}
+
+.fa {
+  color: white;
+}
+
+#footerHR {
+
+  height:3px;
+  border-color:#ffffff;
+  width: 100%;
+}
+  
+/*Welcome column*/
+
+#welcomeMsg {
+text-align: center;
+}
+
+i:hover {
+ font-weight: bolder;
+ color:#ff9800;
+}
+
+.footHR {
+  text-align: left;
+  color: white;
+}
+.nlSend {
+  background-color: #ff9800;
+  font-weight: 500;
+  color: white;
+}
+
+
+/* Modal */
+
+.close {
+  color: black;
+}
+
+.nlSend:hover {
+  background-color: #008080;
+  color: white;
+}
+
+.modal-header {
+  
+  background-color:#ff9800;
+}
+
+.modal-title {
+  color: white;
+  font-family: 'Roboto';
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase
+  
+}
+
+#subFields {
+color:#ff9800;
+font-weight: bold;
+}
+
+#subscribeBtn {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+#subscribeBtn:hover {
+  background-color: #ff9800;
+  color: white;
+  font-weight: 600;
+}
+
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation bar --> 
+<nav class="navbar navbar-expand-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   
+  <div class="collapse navbar-collapse" id="navDropdown">
+    <ul class="navigation__list navbar-nav mr-auto mt-2 mt-md-0 text-info">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Get Started
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="terms.html">A-Z Glossary</a>
+          <a class="dropdown-item" href="basics.html">The Basics</a>
+			</li>
+	  <li><a href="index.html"><img id="logo-navbar-middle" src="images/logo.png" width="206" alt="Scratch Post logo"></a></li>
+	   <li class="nav-item">
+       <!-- <a class="nav-link" href="#">Get Started</a>
+      </li> -->
+	    <li class="nav-item">
+        <a class="nav-link" href="resources.html">Resources</a>
+			</li>
+			
+			
+			<li class="nav-item">
+        <a class="nav-link" href="news.html">News</a>
+      </li>
+	  
+     </ul>
+      </div>
+      <hr>
+</nav>
+
+
+<!-- Jumbotron -->
+
+
+<div class="container">
+   <div class="row">
+
+        <div class="col-lg-8">
+            <img class="img-fluid rounded" id="newsImg" src="images/newsImages/fullglitterHands.jpg" alt="hands covered in pink glitter">
+    
+<h1 class="mt-2 text-info" id="topHeader" style="text-align: center;">Arts vs. STEM: Why not both?</h1>
+<div class="container">
+  <div class="row justify-content-center">
+  </div>
+</div>
+<hr>
+
+        <!-- Post Content -->
+        <div class="resContent" style="text-align:justify">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+
+      
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+      </div>
+        <hr>
+
+  <!-- Date -->
+        <p>Posted on January 1st, 1:31PM</p>
+        
+        <p style="font-weight:bold;">Tagged: <a href="#" class="tagType">Government</a>, <a href="#" class="tagType">Pedagogy</a></p>
+        
+        <!-- Comments Form -->
+        <div class="commentSection">
+        <div class="card my-4">
+          <h5 class="card-header">Leave a Comment:</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-info">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Single Comment -->
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle" src="images/users/amylea.png" alt="">
+          <div class="media-body">
+            <h5 class="mt-0">Amy Lea Deadman</h5>
+            <p>Cras sit amet nibh libero, in gravida nulla. </p>
+          </div>
+        </div>
+
+        <!-- Comment with nested comments -->
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle" src="images/users/leah.png" alt="">
+          <div class="media-body">
+            <h5 class="mt-0">Leah Leaf</h5>
+            <p>Cras sit amet nibh libero, in gravida nulla. </p>
+
+          
+
+            <div class="media mt-4">
+              <img class="d-flex mr-3 rounded-circle" src="images/users/jasmine.png" alt="">
+              <div class="media-body">
+                <h5 class="mt-0">Jasmine Wilson</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+
+     <!-- Sidebar Widgets Column -->
+    <div class="col-md-4">
+      
+            
+            <!-- Search Widget -->
+              
+                <div class="input-group">
+                  <input type="text" class="form-control"placeholder="Search news...">
+                  <span class="input-group-btn">
+                    <button class="btn btnSearch" type="button">Search</button>
+                  </span>
+              </div>
+            
+      
+            <!-- Categories Widget -->
+            <div class="card my-3">
+              <h5 class="card-header">Categories</h3>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#">SATs</a>
+                      </li>
+                      <li>
+                        <a href="#">Pedagogy</a>
+                      </li>
+                      <li>
+                        <a href="#">Scratch</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#">Edtech</a>
+                      </li>
+                      <li>
+                        <a href="#">Government</a>
+                      </li>
+                      <li>
+                        <a href="#">Research</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+             <!-- Side Widget -->
+            <div class="card my-4">
+             <a class="twitter-timeline" href="https://twitter.com/The_ScratchPost?ref_src=twsrc%5Etfw">Tweets by The_ScratchPost</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </div>
+      
+      
+          </div>
+      
+        </div>
+        <!-- /.row -->
+      
+      </div>
+      <!-- /.container -->
+      
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+  
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+  
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+  
+          <!-- Welcome  Message column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" style="font-size:large;">
+            
+            <p id="welcomeMsg">Get your tech terminology up to <i>scratch</i>, download hundreds 
+              of fun KS2 resources and keep abreast of ICT news! <p>
+
+                      <!-- Subscribe Modal -->
+
+                      <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100">Get free Scratch lesson plans</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body mx-3">
+                                    <div class="md-form mb-5">
+                                        <i class="fa fa-user prefix grey-text"></i>
+                                        
+                                        <label data-error="wrong" id="subFields" data-success="right">First Name</label>
+                                        <input type="text" class="form-control validate" placeholder="e.g Jade Smith">
+                                    </div>
+
+                                    <div class="md-form mb-4">
+                                        <i class="fa fa-envelope prefix grey-text"></i>
+                                        <label data-error="wrong" id="subFields" data-success="right">Email Address</label>
+                                        <input type="email" class="form-control validate" placeholder="e.g jade.smith@mail.com">
+                                    </div>
+
+                                    
+                                    <input type="checkbox" style="margin-right:1em;"><label style="color:grey;font-size:small;"> I agree to the Terms &amp; Conditions</label>
+
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <button class="btn btn-lg nlSend">Subscribe<i class="fa fa-paper-plane-o ml-1"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                      
+                        <a href="" class="btn btn-default btn-lg btn-rounded mb-4" id="subscribeBtn" 
+                        data-toggle="modal" data-target="#modalSubscriptionForm">Subscribe</a>
+                        
+                        <p style="font-size: small;">New Scratch lessons to your inbox weekly!</p>
+                    </div>
+          </div>
+
+          <!-- Grid column -->
+  
+          <hr class="w-100 clearfix d-md-none">
+  
+          <!-- Nav links column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class=" mb-4">Navigation</h6>
+      
+            <p>
+              <a href="index.html">Home</a>
+            </p>
+            <p>
+              <a href="terms.html">A-Z Glossary</a>
+            </p>
+            <p>
+              <a href="basics.html">Basics</a>
+            </p>
+            <p>
+              <a href="resources.html">Resources</a>
+            </p>
+            <p>
+              <a href="news.html">News</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <hr class="w-100 clearfix d-md-none">
+  
+          <!-- Useful links column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class=" mb-4 ">Useful Links</h6>
+         
+            <p>
+              <a href="contact.html">Contact Us</a>
+            </p>
+          
+            <p>
+              <a href="help.html">Help</a>
+            </p>
+        
+          </div>
+  
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none">
+  
+        </div>
+        <!-- Footer links -->
+  
+        <hr id="footerHR">
+  
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8">
+  
+            <!--Copyright-->
+            <p class="text-center text-md-left"><small>© 2018 Copyright
+              <a href="#">
+                <i>Scratch Post</i></small>
+              </a>
+            </p>
+  
+          </div>
+  
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+  
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://twitter.com/The_ScratchPost">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fa fa-pinterest"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </footer>
+  
+
+</body>
+</html>
+
+
+	<!-- jQuery  JS-->
+		<script src="js/jquery-3.3.1.js"></script> 
+	
+	<!-- Bootstrap JS -->
+    	<script src='js/bootstrap.min.js'></script> 
+</body>
+</html>
+
